@@ -1,0 +1,10 @@
+# temp files
+**/*~
+
+# other files
+Makefile
+*.userprefs
+
+# directories
+obj
+bin

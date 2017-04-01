@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{28E9926E-79AF-4C8A-8A89-7DC534E05271}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Bridge.Google.Maps</RootNamespace>
+    <AssemblyName>Bridge.Google.Maps</AssemblyName>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoStdLib>true</NoStdLib>
+    <NoWarn>0626,0824</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoStdLib>true</NoStdLib>
+    <NoWarn>0626,0824</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Bridge\Google\Maps\Circle.cs" />
+    <Compile Include="Bridge\Google\Maps\MapCanvasProjection.cs" />
+    <Compile Include="Bridge\Google\Maps\MapPanes.cs" />
+    <Compile Include="Bridge\Google\Maps\OverlayView.cs" />
+    <Compile Include="Bridge\Google\Maps\MapsEventListener.cs" />
+    <Compile Include="Bridge\Google\Maps\CircleOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Drawing\OverlayType.cs" />
+    <Compile Include="Bridge\Google\Maps\PolyMouseEvent.cs" />
+    <Compile Include="Bridge\Google\Maps\MouseEvent.cs" />
+    <Compile Include="Bridge\Google\Maps\RectangleOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Rectangle.cs" />
+    <Compile Include="Bridge\Google\Maps\StrokePosition.cs" />
+    <Compile Include="Bridge\Google\Maps\InfoWindowOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\InfoWindow.cs" />
+    <Compile Include="Bridge\Google\Maps\Icon.cs" />
+    <Compile Include="Bridge\Google\Maps\Polygon.cs" />
+    <Compile Include="Bridge\Google\Maps\PolygonOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\PolylineOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Polyline.cs" />
+    <Compile Include="Bridge\Google\Maps\Size.cs" />
+    <Compile Include="Bridge\Google\Maps\MarkerOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Marker.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeStyler.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeStyleFeatureType.cs" />
+    <Compile Include="Bridge\Google\Maps\OverviewMapControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\ScaleControlStyle.cs" />
+    <Compile Include="Bridge\Google\Maps\ScaleControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\RotateControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\PanControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeControlStyle.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\MapType.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeRegistry.cs" />
+    <Compile Include="Bridge\Google\Maps\MVCArray.cs" />
+    <Compile Include="Bridge\Google\Maps\Data.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeStyle.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewPanoramaOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewPanorama.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeId.cs" />
+    <Compile Include="Bridge\Google\Maps\Point.cs" />
+    <Compile Include="Bridge\Google\Maps\Projection.cs" />
+    <Compile Include="Bridge\Google\Maps\LatLngBounds.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeStyleElementType.cs" />
+    <Compile Include="Bridge\Google\Maps\ZoomControlStyle.cs" />
+    <Compile Include="Bridge\Google\Maps\ZoomControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\ControlPosition.cs" />
+    <Compile Include="Bridge\Google\Maps\LatLngLiteral.cs" />
+    <Compile Include="Bridge\Google\Maps\Map.cs" />
+    <Compile Include="Bridge\Google\Maps\LatLng.cs" />
+    <Compile Include="Bridge\Google\Maps\MapOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\MVCObject.cs" />
+    <Compile Include="Bridge\Google\Maps\ImageMapType.cs" />
+    <Compile Include="Bridge\Google\Maps\FusionTablesLayer.cs" />
+    <Compile Include="Bridge\Google\Maps\Geometry\Spherical.cs" />
+    <Compile Include="Bridge\Google\Maps\Drawing\DrawingManager.cs" />
+    <Compile Include="Bridge\Google\Maps\StyledMapType.cs" />
+    <Compile Include="Bridge\Google\Maps\KmlLayer.cs" />
+    <Compile Include="Bridge\Google\Maps\Drawing\OverlayCompleteEvent.cs" />
+    <Compile Include="Bridge\Google\Maps\Geometry\Encoding.cs" />
+    <Compile Include="Bridge\Google\Maps\ElevationService.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewCoverageLayer.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewService.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\SearchBox.cs" />
+    <Compile Include="Bridge\Google\Maps\Geometry\Poly.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsService.cs" />
+    <Compile Include="Bridge\Google\Maps\DistanceMatrixService.cs" />
+    <Compile Include="Bridge\Google\Maps\Drawing\DrawingManagerOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Drawing\DrawingControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\GeocoderAddressComponent.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\PlaceGeometry.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\PlacePhoto.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\PhotoOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\PlaceReview.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\PlaceResult.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\PlaceAspectRating.cs" />
+    <Compile Include="Bridge\Google\Maps\Places\SearchBoxOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\DistanceMatrixElementStatus.cs" />
+    <Compile Include="Bridge\Google\Maps\DistanceMatrixResponseElement.cs" />
+    <Compile Include="Bridge\Google\Maps\DistanceMatrixResponseRow.cs" />
+    <Compile Include="Bridge\Google\Maps\DistanceMatrixResponse.cs" />
+    <Compile Include="Bridge\Google\Maps\MarkerShape.cs" />
+    <Compile Include="Bridge\Google\Maps\Attribution.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsRequest.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsResult.cs" />
+    <Compile Include="Bridge\Google\Maps\LocationElevationRequest.cs" />
+    <Compile Include="Bridge\Google\Maps\FusionTablesLayerOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\FusionTablesQuery.cs" />
+    <Compile Include="Bridge\Google\Maps\FusionTablesPolygonOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\FusionTablesHeatmap.cs" />
+    <Compile Include="Bridge\Google\Maps\ImageMapTypeOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\KmlLayerOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\LatLngBoundsLiteral.cs" />
+    <Compile Include="Bridge\Google\Maps\MarkerLabel.cs" />
+    <Compile Include="Bridge\Google\Maps\IconSequence.cs" />
+    <Compile Include="Bridge\Google\Maps\Symbol.cs" />
+    <Compile Include="Bridge\Google\Maps\SymbolPath.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewStatus.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewAddressControlOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewPov.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewPanoramaData.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewLocationRequest.cs" />
+    <Compile Include="Bridge\Google\Maps\StyledMapTypeOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewLocation.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewTileData.cs" />
+    <Compile Include="Bridge\Google\Maps\UnitSystem.cs" />
+    <Compile Include="Bridge\Google\Maps\TravelMode.cs" />
+    <Compile Include="Bridge\Google\Maps\TransitRoutePreference.cs" />
+    <Compile Include="Bridge\Google\Maps\TransitMode.cs" />
+    <Compile Include="Bridge\Google\Maps\TrafficModel.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsStatus.cs" />
+    <Compile Include="Bridge\Google\Maps\TransitOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\DrivingOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Place.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsWaypoint.cs" />
+    <Compile Include="Bridge\Google\Maps\TransitFare.cs" />
+    <Compile Include="Bridge\Google\Maps\Time.cs" />
+    <Compile Include="Bridge\Google\Maps\Duration.cs" />
+    <Compile Include="Bridge\Google\Maps\Distance.cs" />
+    <Compile Include="Bridge\Google\Maps\TransitLine.cs" />
+    <Compile Include="Bridge\Google\Maps\TransitStop.cs" />
+    <Compile Include="Bridge\Google\Maps\TransitDetails.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsStep.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsLeg.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsRoute.cs" />
+    <Compile Include="Bridge\Google\Maps\DirectionsGeocodedWaypoint.cs" />
+    <Compile Include="Bridge\Google\Maps\DistanceMatrixStatus.cs" />
+    <Compile Include="Bridge\Google\Maps\DistanceMatrixRequest.cs" />
+    <Compile Include="Bridge\Google\Maps\ElevationStatus.cs" />
+    <Compile Include="Bridge\Google\Maps\ElevationResult.cs" />
+    <Compile Include="Bridge\Google\Maps\PathElevationRequest.cs" />
+    <Compile Include="Bridge\Google\Maps\FusionTablesStyle.cs" />
+    <Compile Include="Bridge\Google\Maps\KmlAuthor.cs" />
+    <Compile Include="Bridge\Google\Maps\KmlLayerStatus.cs" />
+    <Compile Include="Bridge\Google\Maps\KmlLayerMetadata.cs" />
+    <Compile Include="Bridge\Google\Maps\Animation.cs" />
+    <Compile Include="Bridge\Google\Maps\MarkerPlace.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewLink.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewSource.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewPreference.cs" />
+    <Compile Include="Bridge\Google\Maps\StreetViewPanoRequest.cs" />
+    <Compile Include="Bridge\Google\Maps\FusionTablesPolylineOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\FusionTablesMarkerOptions.cs" />
+    <Compile Include="Bridge\Google\Maps\Event.cs" />
+    <Compile Include="Bridge\Google\Maps\Init.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <NoStdLib>True</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <AdditionalExplicitAssemblyReferences />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bridge">
+      <HintPath>\opt\app\other\Bridge\Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bridge.Html5">
+      <HintPath>\opt\app\other\Bridge\Bridge.Html5.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bridge\Google\Maps\Geometry\" />
+    <Folder Include="Bridge\Google\Maps\Places\" />
+  </ItemGroup>
+</Project>
