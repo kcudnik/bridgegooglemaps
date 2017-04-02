@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// The status returned by the StreetViewService on completion of a Street View request.
+    /// The status returned by the StreetViewService on completion of a Street
+    /// View request.
     /// </summary>
     [External]
     [Enum(Emit.Name)]
@@ -17,7 +18,8 @@ namespace Bridge.Google.Maps
         Ok,
 
         /// <summary>
-        /// The request could not be successfully processed, yet the exact reason for failure is unknown.
+        /// The request could not be successfully processed, yet the exact
+        /// reason for failure is unknown.
         /// </summary>
         [Name("UNKNOWN_ERROR")]
         UnknownError,

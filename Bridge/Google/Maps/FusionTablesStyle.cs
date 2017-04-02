@@ -3,8 +3,10 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// Controls the appearance of a set of features within a FusionTablesLayer.
-    /// Features which match the provided SQL predicate will be styled with the supplied options.
+    /// Controls the appearance of a set of features within a
+    /// FusionTablesLayer.
+    /// Features which match the provided SQL predicate will be styled with the
+    /// supplied options.
     /// </summary>
     [External]
     [ObjectLiteral]

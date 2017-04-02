@@ -20,7 +20,8 @@ namespace Bridge.Google.Maps
         public int Width;
 
         /// <summary>
-        /// Two-dimensonal size, where width is the distance on the x-axis, and height is the distance on the y-axis.
+        /// Two-dimensonal size, where width is the distance on the x-axis, and
+        /// height is the distance on the y-axis.
         /// </summary>
         /// <param name="width">The width.</param>
         /// <param name="height">The height.</param>

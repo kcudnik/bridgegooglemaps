@@ -10,12 +10,14 @@ namespace Bridge.Google.Maps
     public class ImageMapTypeOptions
     {
         /// <summary>
-        /// Alt text to display when this MapType's button is hovered over in the MapTypeControl.
+        /// Alt text to display when this MapType's button is hovered over in
+        /// the MapTypeControl.
         /// </summary>
         public string Alt;
 
         /// <summary>
-        /// Returns a string (URL) for given tile coordinate (x, y) and zoom level.
+        /// Returns a string (URL) for given tile coordinate (x, y) and zoom
+        /// level.
         /// </summary>
         public GetTileUrlDelegate GetTileUrl;
 
@@ -25,7 +27,8 @@ namespace Bridge.Google.Maps
         public int MaxZoom;
 
         /// <summary>
-        /// The minimum zoom level for the map when displaying this MapType. Optional.
+        /// The minimum zoom level for the map when displaying this MapType.
+        /// Optional.
         /// </summary>
         public int MinZoom;
 
@@ -35,7 +38,9 @@ namespace Bridge.Google.Maps
         public string Name;
 
         /// <summary>
-        /// The opacity to apply to the tiles. The opacity should be specified as a float value between 0 and 1.0, where 0 is fully transparent and 1 is fully opaque.
+        /// The opacity to apply to the tiles. The opacity should be specified
+        /// as a float value between 0 and 1.0, where 0 is fully transparent
+        /// and 1 is fully opaque.
         /// </summary>
         public double Opacity;
 

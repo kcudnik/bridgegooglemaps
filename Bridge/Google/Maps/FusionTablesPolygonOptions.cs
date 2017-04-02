@@ -3,14 +3,16 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// Options which control the appearance of polygons in a FusionTablesLayer.
+    /// Options which control the appearance of polygons in a
+    /// FusionTablesLayer.
     /// </summary>
     [External]
     [ObjectLiteral]
     public class FusionTablesPolygonOptions
     {
         /// <summary>
-        /// The fill color, defined by a six-digit hexadecimal number in RRGGBB format (e.g. #00AAFF).
+        /// The fill color, defined by a six-digit hexadecimal number in RRGGBB
+        /// format (e.g. #00AAFF).
         /// </summary>
         public string FillColor;
 
@@ -20,7 +22,8 @@ namespace Bridge.Google.Maps
         public double FillOpacity;
 
         /// <summary>
-        /// The fill color, defined by a six-digit hexadecimal number in RRGGBB format (e.g. #00AAFF).
+        /// The fill color, defined by a six-digit hexadecimal number in RRGGBB
+        /// format (e.g. #00AAFF).
         /// </summary>
         public string StrokeColor;
 

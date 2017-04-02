@@ -5,14 +5,18 @@ namespace Bridge.Google.Maps
     using System;
 
     /// <summary>
-    /// Displays the panorama for a given LatLng or panorama ID. A StreetViewPanorama object provides a Street View "viewer" which can be stand-alone within a separate &lt;div&gt; or bound to a Map.
+    /// Displays the panorama for a given LatLng or panorama ID. A
+    /// StreetViewPanorama object provides a Street View "viewer" which can be
+    /// stand-alone within a separate &lt;div&gt; or bound to a Map.
     /// </summary>
     [External]
     [Namespace("google.maps")]
     public class StreetViewPanorama : MVCObject
     {
         /// <summary>
-        /// Additional controls to attach to the panorama. To add a control to the panorama, add the control's &lt;div&gt; to the MVCArray corresponding to the ControlPosition where it should be rendered.
+        /// Additional controls to attach to the panorama. To add a control to
+        /// the panorama, add the control's &lt;div&gt; to the MVCArray
+        /// corresponding to the ControlPosition where it should be rendered.
         /// </summary>
         public MVCArray<Node>[] Controls;
 
@@ -40,7 +44,8 @@ namespace Bridge.Google.Maps
         public extern StreetViewLocation GetLocation();
 
         /// <summary>
-        /// Returns the current panorama ID for the Street View panorama. This id is stable within the browser's current session only.
+        /// Returns the current panorama ID for the Street View panorama. This
+        /// id is stable within the browser's current session only.
         /// </summary>
         /// <returns>
         /// The <see cref="string"/>.
@@ -48,7 +53,10 @@ namespace Bridge.Google.Maps
         public extern string GetPano();
 
         /// <summary>
-        /// Returns the heading and pitch of the photographer when this panorama was taken. For Street View panoramas on the road, this also reveals in which direction the car was travelling. This data is available after the pano_changed event.
+        /// Returns the heading and pitch of the photographer when this
+        /// panorama was taken. For Street View panoramas on the road, this
+        /// also reveals in which direction the car was travelling. This data
+        /// is available after the pano_changed event.
         /// </summary>
         /// <returns>
         /// The <see cref="StreetViewPov"/>.
@@ -72,7 +80,8 @@ namespace Bridge.Google.Maps
         public extern StreetViewPov GetPov();
 
         /// <summary>
-        /// Returns the status of the panorama on completion of the setPosition() or setPano() request.
+        /// Returns the status of the panorama on completion of the
+        /// setPosition() or setPano() request.
         /// </summary>
         /// <returns>
         /// The <see cref="StreetViewStatus"/>.
@@ -80,7 +89,8 @@ namespace Bridge.Google.Maps
         public extern StreetViewStatus GetStatus();
 
         /// <summary>
-        /// Returns true if the panorama is visible. It does not specify whether Street View imagery is available at the specified position.
+        /// Returns true if the panorama is visible. It does not specify
+        /// whether Street View imagery is available at the specified position.
         /// </summary>
         /// <returns>
         /// The <see cref="bool"/>.
@@ -88,7 +98,9 @@ namespace Bridge.Google.Maps
         public extern bool GetVisible();
 
         /// <summary>
-        /// Returns the zoom level of the panorama. Fully zoomed-out is level 0, where the field of view is 180 degrees. Zooming in increases the zoom level.
+        /// Returns the zoom level of the panorama. Fully zoomed-out is level
+        /// 0, where the field of view is 180 degrees. Zooming in increases the
+        /// zoom level.
         /// </summary>
         /// <returns>
         /// The <see cref="int"/>.
@@ -96,7 +108,8 @@ namespace Bridge.Google.Maps
         public extern int GetZoom();
 
         /// <summary>
-        /// Set the custom panorama provider called on pano change to load custom panoramas.
+        /// Set the custom panorama provider called on pano change to load
+        /// custom panoramas.
         /// </summary>
         /// <param name="provider">
         /// The provider.
@@ -144,7 +157,9 @@ namespace Bridge.Google.Maps
         public extern void SetPov(StreetViewPov pov);
 
         /// <summary>
-        /// Sets to true to make the panorama visible. If set to false, the panorama will be hidden whether it is embedded in the map or in its own &lt;div&gt;.
+        /// Sets to true to make the panorama visible. If set to false, the
+        /// panorama will be hidden whether it is embedded in the map or in its
+        /// own &lt;div&gt;.
         /// </summary>
         /// <param name="flag">
         /// The flag.
@@ -152,7 +167,9 @@ namespace Bridge.Google.Maps
         public extern void SetVisible(bool flag);
 
         /// <summary>
-        /// Sets the zoom level of the panorama. Fully zoomed-out is level 0, where the field of view is 180 degrees. Zooming in increases the zoom level.
+        /// Sets the zoom level of the panorama. Fully zoomed-out is level 0,
+        /// where the field of view is 180 degrees. Zooming in increases the
+        /// zoom level.
         /// </summary>
         /// <param name="zoom">
         /// The zoom.

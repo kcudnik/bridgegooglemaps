@@ -35,7 +35,8 @@ namespace Bridge.Google.Maps
         public extern void Clear();
 
         /// <summary>
-        /// Iterate over each element, calling the provided callback. The callback is called for each element like: callback(element, index).
+        /// Iterate over each element, calling the provided callback. The
+        /// callback is called for each element like: callback(element, index).
         /// </summary>
         /// <param name="callback">
         /// The callback.
@@ -43,7 +44,8 @@ namespace Bridge.Google.Maps
         public extern void ForEach(Action<T, int> callback);
 
         /// <summary>
-        /// Returns a reference to the underlying Array. Warning: if the Array is mutated, no events will be fired by this object.
+        /// Returns a reference to the underlying Array. Warning: if the Array
+        /// is mutated, no events will be fired by this object.
         /// </summary>
         /// <returns>
         /// The array.
@@ -89,7 +91,8 @@ namespace Bridge.Google.Maps
         public extern T Pop();
 
         /// <summary>
-        /// Adds one element to the end of the array and returns the new length of the array.
+        /// Adds one element to the end of the array and returns the new length
+        /// of the array.
         /// </summary>
         /// <param name="elem">
         /// The elem.

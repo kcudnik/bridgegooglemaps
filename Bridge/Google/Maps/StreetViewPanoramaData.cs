@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// The representation of a panorama returned from the provider defined using registerPanoProvider.
+    /// The representation of a panorama returned from the provider defined
+    /// using registerPanoProvider.
     /// </summary>
     [External]
     [ObjectLiteral]
@@ -15,7 +16,8 @@ namespace Bridge.Google.Maps
         public string Copyright;
 
         /// <summary>
-        /// Specifies the year and month in which the imagery in this panorama was acquired. The date string is in the form YYYY-MM.
+        /// Specifies the year and month in which the imagery in this panorama
+        /// was acquired. The date string is in the form YYYY-MM.
         /// </summary>
         public string ImageData;
 

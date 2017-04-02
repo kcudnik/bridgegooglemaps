@@ -18,7 +18,8 @@ namespace Bridge.Google.Maps
         public extern Map GetMap();
 
         /// <summary>
-        /// Renders the layer on the specified map. If the map is set to null, the layer will be removed.
+        /// Renders the layer on the specified map. If the map is set to null,
+        /// the layer will be removed.
         /// </summary>
         /// <param name="map">
         /// The map.

@@ -12,10 +12,15 @@ namespace Bridge.Google.Maps
     {
         /// <summary>
         /// Creates an info window with the given options.
-        /// An InfoWindow can be placed on a map at a particular position or above a marker, depending on what is specified in the options.
-        /// Unless auto-pan is disabled, an InfoWindow will pan the map to make itself visible when it is opened.
-        /// After constructing an InfoWindow, you must call open to display it on the map.
-        /// The user can click the close button on the InfoWindow to remove it from the map, or the developer can call close() for the same effect.
+        /// An InfoWindow can be placed on a map at a particular position or
+        /// above a marker, depending on what is specified in the options.
+        /// Unless auto-pan is disabled, an InfoWindow will pan the map to make
+        /// itself visible when it is opened.
+        /// After constructing an InfoWindow, you must call open to display it
+        /// on the map.
+        /// The user can click the close button on the InfoWindow to remove it
+        /// from the map, or the developer can call close() for the same
+        /// effect.
         /// </summary>
         /// <param name="opts">Options parameter.</param>
         public extern InfoWindow(InfoWindowOptions opts = null);
@@ -42,10 +47,14 @@ namespace Bridge.Google.Maps
         public extern LatLng GetPosition();
 
         /// <summary>
-        /// Opens this InfoWindow on the given map. Optionally, an InfoWindow can be associated with an anchor.
+        /// Opens this InfoWindow on the given map. Optionally, an InfoWindow
+        /// can be associated with an anchor.
         /// In the core API, the only anchor is the Marker class.
-        /// However, an anchor can be any MVCObject that exposes a LatLng position property and optionally a Point anchorPoint property for calculating the pixelOffset (see InfoWindowOptions).
-        /// The anchorPoint is the offset from the anchor's position to the tip of the InfoWindow.
+        /// However, an anchor can be any MVCObject that exposes a LatLng
+        /// position property and optionally a Point anchorPoint property for
+        /// calculating the pixelOffset (see InfoWindowOptions).
+        /// The anchorPoint is the offset from the anchor's position to the tip
+        /// of the InfoWindow.
         /// </summary>
         /// <param name="map">
         /// The map.

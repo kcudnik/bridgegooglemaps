@@ -4,14 +4,16 @@ namespace Bridge.Google.Maps
     using System;
 
     /// <summary>
-    /// A service for computing distances between multiple origins and destinations.
+    /// A service for computing distances between multiple origins and
+    /// destinations.
     /// </summary>
     [External]
     [Namespace("google.maps")]
     public class DistanceMatrixService
     {
         /// <summary>
-        /// Creates a new instance of a DistanceMatrixService that sends distance matrix queries to Google servers.
+        /// Creates a new instance of a DistanceMatrixService that sends
+        /// distance matrix queries to Google servers.
         /// </summary>
         public extern DistanceMatrixService();
 
@@ -24,6 +26,8 @@ namespace Bridge.Google.Maps
         /// <param name="callback">
         /// The callback.
         /// </param>
-        public extern void GetDistanceMatrix(DistanceMatrixRequest request, Action<DistanceMatrixResponse, DistanceMatrixStatus> callback);
+        public extern void GetDistanceMatrix(
+            DistanceMatrixRequest request, 
+            Action<DistanceMatrixResponse, DistanceMatrixStatus> callback);
     }
 }

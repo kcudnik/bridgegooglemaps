@@ -16,7 +16,9 @@ namespace Bridge.Google.Maps.Places
         public LatLng Location;
 
         /// <summary>
-        /// The preferred viewport when displaying this Place on a map. This property will be null if the preferred viewport for the Place is not known.
+        /// The preferred viewport when displaying this Place on a map. This
+        /// property will be null if the preferred viewport for the Place is
+        /// not known.
         /// </summary>
         public LatLngBounds Viewport;
     }

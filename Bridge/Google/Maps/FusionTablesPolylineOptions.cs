@@ -3,14 +3,16 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// Options which control the appearance of polylines in a FusionTablesLayer.
+    /// Options which control the appearance of polylines in a
+    /// FusionTablesLayer.
     /// </summary>
     [External]
     [ObjectLiteral]
     public class FusionTablesPolylineOptions
     {
         /// <summary>
-        /// The fill color, defined by a six-digit hexadecimal number in RRGGBB format (e.g. #00AAFF).
+        /// The fill color, defined by a six-digit hexadecimal number in RRGGBB
+        /// format (e.g. #00AAFF).
         /// </summary>
         public string StrokeColor;
 

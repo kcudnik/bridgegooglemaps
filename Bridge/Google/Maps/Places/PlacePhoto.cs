@@ -22,7 +22,9 @@ namespace Bridge.Google.Maps.Places
     {
         // TODO could be method
         /// <summary>
-        /// Returns the image URL corresponding to the specified options. You must include a PhotoOptions object with at least one of maxWidth or maxHeight specified.
+        /// Returns the image URL corresponding to the specified options. You
+        /// must include a PhotoOptions object with at least one of maxWidth or
+        /// maxHeight specified.
         /// </summary>
         public GetUrlDelegate GetUrl;
 

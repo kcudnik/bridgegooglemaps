@@ -3,8 +3,10 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// A layer for displaying geospatial data. Points, line-strings and polygons can be displayed.
-    /// Every Map has a Data object by default, so most of the time there is no need to construct one.For example:
+    /// A layer for displaying geospatial data. Points, line-strings and
+    /// polygons can be displayed.
+    /// Every Map has a Data object by default, so most of the time there is no
+    /// need to construct one.For example:
     /// var myMap = new google.maps.Map(...);
     /// myMap.data.addGeoJson(...);
     /// myMap.data.setStyle(...);

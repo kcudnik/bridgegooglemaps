@@ -10,7 +10,8 @@ namespace Bridge.Google.Maps
     public class Circle : MVCObject
     {
         /// <summary>
-        /// Create a circle using the passed CircleOptions, which specify the center, radius, and style.
+        /// Create a circle using the passed CircleOptions, which specify the
+        /// center, radius, and style.
         /// </summary>
         /// <param name="opts">
         /// CircleOptions, which specify the center, radius, and style.
@@ -90,7 +91,9 @@ namespace Bridge.Google.Maps
         public extern void SetDraggable(bool draggable);
 
         /// <summary>
-        /// If set to true, the user can edit this circle by dragging the control points shown at the center and around the circumference of the circle.
+        /// If set to true, the user can edit this circle by dragging the
+        /// control points shown at the center and around the circumference of
+        /// the circle.
         /// </summary>
         /// <param name="editable">
         /// The editable.
@@ -98,7 +101,8 @@ namespace Bridge.Google.Maps
         public extern void SetEditable(bool editable);
 
         /// <summary>
-        /// Renders the circle on the specified map. If map is set to null, the circle will be removed.
+        /// Renders the circle on the specified map. If map is set to null, the
+        /// circle will be removed.
         /// </summary>
         /// <param name="map">
         /// The map.

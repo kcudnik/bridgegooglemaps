@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// This object defines the properties that can be set on a FusionTablesLayer object.
+    /// This object defines the properties that can be set on a
+    /// FusionTablesLayer object.
     /// </summary>
     [External]
     [ObjectLiteral]
@@ -31,12 +32,14 @@ namespace Bridge.Google.Maps
         public FusionTablesQuery Query;
 
         /// <summary>
-        /// An array of up to 5 style specifications, which control the appearance of features within the layer.
+        /// An array of up to 5 style specifications, which control the
+        /// appearance of features within the layer.
         /// </summary>
         public FusionTablesStyle[] Styles;
 
         /// <summary>
-        /// Suppress the rendering of info windows when layer features are clicked.
+        /// Suppress the rendering of info windows when layer features are
+        /// clicked.
         /// </summary>
         public bool SuppressInfoWindows;
     }

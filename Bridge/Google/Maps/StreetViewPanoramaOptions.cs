@@ -50,7 +50,8 @@ namespace Bridge.Google.Maps
         public FullscreenControlOptions FullscreenControlOptions;
 
         /// <summary>
-        /// The enabled/disabled state of the imagery acquisition date control. Disabled by default.
+        /// The enabled/disabled state of the imagery acquisition date control.
+        /// Disabled by default.
         /// </summary>
         public bool ImageDateControl;
 
@@ -70,12 +71,15 @@ namespace Bridge.Google.Maps
         public PanControlOptions PanControlOptions;
 
         /// <summary>
-        /// The panorama ID, which should be set when specifying a custom panorama.
+        /// The panorama ID, which should be set when specifying a custom
+        /// panorama.
         /// </summary>
         public string Pano;
 
         /// <summary>
-        /// Custom panorama provider, which takes a string pano id and returns an object defining the panorama given that id. This function must be defined to specify custom panorama imagery.
+        /// Custom panorama provider, which takes a string pano id and returns
+        /// an object defining the panorama given that id. This function must
+        /// be defined to specify custom panorama imagery.
         /// </summary>
         public StreetViewPanoramaData PanoProvider;
 
@@ -85,12 +89,14 @@ namespace Bridge.Google.Maps
         public Union<LatLng, LatLngLiteral> Position;
 
         /// <summary>
-        /// The camera orientation, specified as heading and pitch, for the panorama.
+        /// The camera orientation, specified as heading and pitch, for the
+        /// panorama.
         /// </summary>
         public StreetViewPov Pov;
 
         /// <summary>
-        /// If false, disables scrollwheel zooming in Street View. The scrollwheel is enabled by default.
+        /// If false, disables scrollwheel zooming in Street View. The
+        /// scrollwheel is enabled by default.
         /// </summary>
         public bool Scrollwheel;
 

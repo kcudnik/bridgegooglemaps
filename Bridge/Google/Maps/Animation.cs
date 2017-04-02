@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// Animations that can be played on a marker. Use the setAnimation method on Marker or the animation option to play an animation.
+    /// Animations that can be played on a marker. Use the setAnimation method
+    /// on Marker or the animation option to play an animation.
     /// </summary>
     [External]
     [Enum(Emit.Name)]

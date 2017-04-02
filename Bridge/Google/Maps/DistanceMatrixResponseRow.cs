@@ -3,7 +3,9 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// A row of the response to a DistanceMatrixService request, consisting of a sequence of DistanceMatrixResponseElements, one for each corresponding destination address.
+    /// A row of the response to a DistanceMatrixService request, consisting of
+    /// a sequence of DistanceMatrixResponseElements, one for each
+    /// corresponding destination address.
     /// </summary>
     [External]
     [ObjectLiteral]

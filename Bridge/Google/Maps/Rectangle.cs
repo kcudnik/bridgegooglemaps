@@ -10,7 +10,8 @@ namespace Bridge.Google.Maps
     public class Rectangle : MVCObject
     {
         /// <summary>
-        /// Create a rectangle using the passed RectangleOptions, which specify the bounds and style.
+        /// Create a rectangle using the passed RectangleOptions, which specify
+        /// the bounds and style.
         /// </summary>
         /// <param name="opts">The options.</param>
         public extern Rectangle(RectangleOptions opts = null);
@@ -72,7 +73,8 @@ namespace Bridge.Google.Maps
         public extern void SetDraggable(bool flag);
 
         /// <summary>
-        /// If set to true, the user can edit this rectangle by dragging the control points shown at the corners and on each edge.
+        /// If set to true, the user can edit this rectangle by dragging the
+        /// control points shown at the corners and on each edge.
         /// </summary>
         /// <param name="flag">
         /// The flag.
@@ -80,7 +82,8 @@ namespace Bridge.Google.Maps
         public extern void SetEditable(bool flag);
 
         /// <summary>
-        /// Renders the rectangle on the specified map. If map is set to null, the rectangle will be removed.
+        /// Renders the rectangle on the specified map. If map is set to null,
+        /// the rectangle will be removed.
         /// </summary>
         /// <param name="map">
         /// The map.

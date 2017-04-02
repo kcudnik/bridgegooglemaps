@@ -11,7 +11,8 @@ namespace Bridge.Google.Maps
     public enum MapTypeId
     {
         /// <summary>
-        /// This map type displays a transparent layer of major streets on satellite images.
+        /// This map type displays a transparent layer of major streets on
+        /// satellite images.
         /// </summary>
         [Name("HYBRID")]
         Hybrid,
@@ -29,7 +30,8 @@ namespace Bridge.Google.Maps
         Satellite,
 
         /// <summary>
-        /// This map type displays maps with physical features such as terrain and vegetation.
+        /// This map type displays maps with physical features such as terrain
+        /// and vegetation.
         /// </summary>
         [Name("TERRAIN")]
         Terrain

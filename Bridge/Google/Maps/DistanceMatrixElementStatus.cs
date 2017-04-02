@@ -3,7 +3,9 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// The element-level status about a particular origin-destination pairing returned by the DistanceMatrixService upon completion of a distance matrix request.
+    /// The element-level status about a particular origin-destination pairing
+    /// returned by the DistanceMatrixService upon completion of a distance
+    /// matrix request.
     /// </summary>
     [External]
     [Enum(Emit.Name)]
@@ -11,7 +13,8 @@ namespace Bridge.Google.Maps
     public enum DistanceMatrixElementStatus
     {
         /// <summary>
-        /// The origin and/or destination of this pairing could not be geocoded.
+        /// The origin and/or destination of this pairing could not be
+        /// geocoded.
         /// </summary>
         [Name("NOT_FOUND")]
         NotFound,

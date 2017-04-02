@@ -11,13 +11,15 @@ namespace Bridge.Google.Maps
     public class Marker : MVCObject
     {
         /// <summary>
-        /// The maximum default z-index that the API will assign to a marker. You may set a higher z-index to bring a marker to the front.
+        /// The maximum default z-index that the API will assign to a marker.
+        /// You may set a higher z-index to bring a marker to the front.
         /// </summary>
         [Name("MAX_ZINDEX")]
         public const int MaxZIndex = 0;
 
         /// <summary>
-        /// Creates a marker with the options specified. If a map is specified, the marker is added to the map upon construction.
+        /// Creates a marker with the options specified. If a map is specified,
+        /// the marker is added to the map upon construction.
         /// Note that the position must be set for the marker to display.
         /// </summary>
         /// <param name="opts">Options parameter.</param>
@@ -145,7 +147,8 @@ namespace Bridge.Google.Maps
 
         /// <summary>
         /// Start an animation. Any ongoing animation will be cancelled.
-        /// Currently supported animations are: BOUNCE, DROP. Passing in null will cause any animation to stop.
+        /// Currently supported animations are: BOUNCE, DROP. Passing in null
+        /// will cause any animation to stop.
         /// </summary>
         /// <param name="animation">
         /// The animation.

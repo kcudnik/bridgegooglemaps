@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps.Places
     using Bridge;
 
     /// <summary>
-    /// A single address component within a GeocoderResult. A full address may consist of multiple address components.
+    /// A single address component within a GeocoderResult. A full address may
+    /// consist of multiple address components.
     /// </summary>
     [External]
     [ObjectLiteral]
@@ -23,7 +24,8 @@ namespace Bridge.Google.Maps.Places
 
         /// <summary>
         /// An array of strings denoting the type of this address component.
-        /// A list of valid types can be found https://developers.google.com/maps/documentation/geocoding/#Types.
+        /// A list of valid types can be found
+        /// https://developers.google.com/maps/documentation/geocoding/#Types.
         /// </summary>
         public string[] Types;
     }

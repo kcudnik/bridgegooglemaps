@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// The valid travel modes that can be specified in a DirectionsRequest as well as the travel modes returned in a DirectionsStep.
+    /// The valid travel modes that can be specified in a DirectionsRequest as
+    /// well as the travel modes returned in a DirectionsStep.
     /// </summary>
     [External]
     [Enum(Emit.Name)]

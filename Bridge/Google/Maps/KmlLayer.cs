@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// A KmlLayer adds geographic markup to the map from a KML, KMZ or GeoRSS file that is hosted on a publicly accessible web server.
+    /// A KmlLayer adds geographic markup to the map from a KML, KMZ or GeoRSS
+    /// file that is hosted on a publicly accessible web server.
     /// A KmlFeatureData object is provided for each feature when clicked.
     /// </summary>
     [External]
@@ -11,7 +12,10 @@ namespace Bridge.Google.Maps
     public class KmlLayer : MVCObject
     {
         /// <summary>
-        /// Creates a KmlLayer which renders the contents of the specified KML/KMZ file (https://developers.google.com/kml/documentation/kmlreference) or GeoRSS file (http://www.georss.org).
+        /// Creates a KmlLayer which renders the contents of the specified
+        /// KML/KMZ file
+        /// (https://developers.google.com/kml/documentation/kmlreference) or
+        /// GeoRSS file (http://www.georss.org).
         /// </summary>
         /// <param name="options">Options parameter.</param>
         public extern KmlLayer(KmlLayerOptions options = null);
@@ -33,7 +37,8 @@ namespace Bridge.Google.Maps
         public extern Map GetMap();
 
         /// <summary>
-        /// Get the metadata associated with this layer, as specified in the layer markup.
+        /// Get the metadata associated with this layer, as specified in the
+        /// layer markup.
         /// </summary>
         /// <returns>
         /// The <see cref="KmlLayerMetadata"/>.
@@ -41,7 +46,8 @@ namespace Bridge.Google.Maps
         public extern KmlLayerMetadata GetMetadata();
 
         /// <summary>
-        /// Get the status of the layer, set once the requested document has loaded.
+        /// Get the status of the layer, set once the requested document has
+        /// loaded.
         /// </summary>
         /// <returns>
         /// The <see cref="KmlLayerStatus"/>.
@@ -65,7 +71,8 @@ namespace Bridge.Google.Maps
         public extern int GetZIndex();
 
         /// <summary>
-        /// Renders the KML Layer on the specified map. If map is set to null, the layer is removed.
+        /// Renders the KML Layer on the specified map. If map is set to null,
+        /// the layer is removed.
         /// </summary>
         /// <param name="map">
         /// The map.

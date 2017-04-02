@@ -15,22 +15,27 @@ namespace Bridge.Google.Maps
         public LatLng Center;
 
         /// <summary>
-        /// Indicates whether this Circle handles mouse events. Defaults to true.
+        /// Indicates whether this Circle handles mouse events. Defaults to
+        /// true.
         /// </summary>
         public bool Clickable;
 
         /// <summary>
-        /// If set to true, the user can drag this circle over the map. Defaults to false.
+        /// If set to true, the user can drag this circle over the map.
+        /// Defaults to false.
         /// </summary>
         public bool Draggable;
 
         /// <summary>
-        /// If set to true, the user can edit this circle by dragging the control points shown at the center and around the circumference of the circle. Defaults to false.
+        /// If set to true, the user can edit this circle by dragging the
+        /// control points shown at the center and around the circumference of
+        /// the circle. Defaults to false.
         /// </summary>
         public bool Editable;
 
         /// <summary>
-        /// The fill color. All CSS3 colors are supported except for extended named colors.
+        /// The fill color. All CSS3 colors are supported except for extended
+        /// named colors.
         /// </summary>
         public string FillColor;
 
@@ -50,7 +55,8 @@ namespace Bridge.Google.Maps
         public double Radius;
 
         /// <summary>
-        /// The stroke color. All CSS3 colors are supported except for extended named colors.
+        /// The stroke color. All CSS3 colors are supported except for extended
+        /// named colors.
         /// </summary>
         public string StrokeColor;
 
@@ -60,7 +66,8 @@ namespace Bridge.Google.Maps
         public double StrokeOpacity;
 
         /// <summary>
-        /// The stroke position. Defaults to CENTER. This property is not supported on Internet Explorer 8 and earlier.
+        /// The stroke position. Defaults to CENTER. This property is not
+        /// supported on Internet Explorer 8 and earlier.
         /// </summary>
         public StrokePosition StrokePosition;
 

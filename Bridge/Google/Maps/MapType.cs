@@ -10,24 +10,28 @@ namespace Bridge.Google.Maps
     public delegate Node GetTileDelegate(Point tileCoord, int zoom, DocumentInstance ownerDocument);
 
     /// <summary>
-    /// This interface defines the map type, and is typically used for custom map types. Immutable.
+    /// This interface defines the map type, and is typically used for custom
+    /// map types. Immutable.
     /// </summary>
     public interface MapType
     {
         /// <summary>
-        /// Alt text to display when this MapType's button is hovered over in the MapTypeControl. Optional.
+        /// Alt text to display when this MapType's button is hovered over in
+        /// the MapTypeControl. Optional.
         /// </summary>
         [Name("alt")]
         string Alt { get; set; }
 
         /// <summary>
-        /// The maximum zoom level for the map when displaying this MapType. Required for base MapTypes, ignored for overlay MapTypes.
+        /// The maximum zoom level for the map when displaying this MapType.
+        /// Required for base MapTypes, ignored for overlay MapTypes.
         /// </summary>
         [Name("maxZoom")]
         int MaxZoom { get; set; }
 
         /// <summary>
-        /// The minimum zoom level for the map when displaying this MapType. Optional; defaults to 0.
+        /// The minimum zoom level for the map when displaying this MapType.
+        /// Optional; defaults to 0.
         /// </summary>
         [Name("minZoom")]
         int MinZoom { get; set; }
@@ -39,13 +43,15 @@ namespace Bridge.Google.Maps
         string Name { get; set; }
 
         /// <summary>
-        /// The Projection used to render this MapType. Optional; defaults to Mercator.
+        /// The Projection used to render this MapType. Optional; defaults to
+        /// Mercator.
         /// </summary>
         [Name("projection")]
         Projection Projection { get; set; }
 
         /// <summary>
-        /// Radius of the planet for the map, in meters. Optional; defaults to Earth's equatorial radius of 6378137 meters.
+        /// Radius of the planet for the map, in meters. Optional; defaults to
+        /// Earth's equatorial radius of 6378137 meters.
         /// </summary>
         [Name("radius")]
         double Radius { get; set; }
@@ -57,7 +63,9 @@ namespace Bridge.Google.Maps
         Size TileSize { get; set; }
 
         /// <summary>
-        /// Returns a tile for the given tile coordinate (x, y) and zoom level. This tile will be appended to the given ownerDocument. Not available for base map types.
+        /// Returns a tile for the given tile coordinate (x, y) and zoom level.
+        /// This tile will be appended to the given ownerDocument. Not
+        /// available for base map types.
         /// </summary>
         /// <param name="tileCoord">
         /// The tile Coord.
@@ -74,7 +82,9 @@ namespace Bridge.Google.Maps
         Node GetTile(Point tileCoord, int zoom, DocumentInstance ownerDocument);
 
         /// <summary>
-        /// Releases the given tile, performing any necessary cleanup. The provided tile will have already been removed from the document. Optional.
+        /// Releases the given tile, performing any necessary cleanup. The
+        /// provided tile will have already been removed from the document.
+        /// Optional.
         /// </summary>
         /// <param name="tile">
         /// The tile.

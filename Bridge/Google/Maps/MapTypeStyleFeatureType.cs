@@ -3,7 +3,11 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// Possible values for feature types. Specify these values as strings, i.e. 'administrative' or 'poi.park'. Stylers applied to a parent feature type automatically apply to all child feature types. Note however that parent features may include some additional features that are not included in one of their child feature types.
+    /// Possible values for feature types. Specify these values as strings,
+    /// i.e. 'administrative' or 'poi.park'. Stylers applied to a parent
+    /// feature type automatically apply to all child feature types. Note
+    /// however that parent features may include some additional features that
+    /// are not included in one of their child feature types.
     /// </summary>
     [External]
     [Enum(Emit.Name)]

@@ -11,7 +11,12 @@ namespace Bridge.Google.Maps
     public class StyledMapType : MVCObject, MapType
     {
         /// <summary>
-        /// Creates a styled MapType with the specified options. The StyledMapType takes an array of MapTypeStyles, where each MapTypeStyle is applied to the map consecutively. A later MapTypeStyle that applies the same MapTypeStylers to the same selectors as an earlier MapTypeStyle will override the earlier MapTypeStyle.
+        /// Creates a styled MapType with the specified options. The
+        /// StyledMapType takes an array of MapTypeStyles, where each
+        /// MapTypeStyle is applied to the map consecutively. A later
+        /// MapTypeStyle that applies the same MapTypeStylers to the same
+        /// selectors as an earlier MapTypeStyle will override the earlier
+        /// MapTypeStyle.
         /// </summary>
         /// <param name="styles">The styles.</param>
         /// <param name="options">The options.</param>

@@ -6,7 +6,11 @@ namespace Bridge.Google.Maps
     public interface Projection
     {
         /// <summary>
-        /// Translates from the LatLng cylinder to the Point plane. This interface specifies a function which implements translation from given LatLng values to world coordinates on the map projection. The Maps API calls this method when it needs to plot locations on screen. Projection objects must implement this method.
+        /// Translates from the LatLng cylinder to the Point plane. This
+        /// interface specifies a function which implements translation from
+        /// given LatLng values to world coordinates on the map projection. The
+        /// Maps API calls this method when it needs to plot locations on
+        /// screen. Projection objects must implement this method.
         /// </summary>
         /// <param name="latLng">
         /// The lat lng.
@@ -20,7 +24,11 @@ namespace Bridge.Google.Maps
         Point FromLatLngToPoint(LatLng latLng, Point point = null);
 
         /// <summary>
-        /// This interface specifies a function which implements translation from world coordinates on a map projection to LatLng values. The Maps API calls this method when it needs to translate actions on screen to positions on the map. Projection objects must implement this method.
+        /// This interface specifies a function which implements translation
+        /// from world coordinates on a map projection to LatLng values. The
+        /// Maps API calls this method when it needs to translate actions on
+        /// screen to positions on the map. Projection objects must implement
+        /// this method.
         /// </summary>
         /// <param name="pixel">
         /// The pixel.

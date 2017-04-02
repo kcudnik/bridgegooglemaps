@@ -7,7 +7,8 @@ namespace Bridge.Google.Maps
     public delegate string GetTileUrlDelegate(Point tileCoord, int zoom);
 
     /// <summary>
-    /// This class implements the MapType interface and is provided for rendering image tiles.
+    /// This class implements the MapType interface and is provided for
+    /// rendering image tiles.
     /// </summary>
     [External]
     [Namespace("google.maps")]
@@ -57,7 +58,8 @@ namespace Bridge.Google.Maps
         public Size TileSize { get; set; }
 
         /// <summary>
-        /// Returns the opacity level (0 (transparent) to 1.0) of the ImageMapType tiles.
+        /// Returns the opacity level (0 (transparent) to 1.0) of the
+        /// ImageMapType tiles.
         /// </summary>
         /// <returns>
         /// The <see cref="double"/>.
@@ -90,7 +92,8 @@ namespace Bridge.Google.Maps
         public extern void ReleaseTile(Node tile);
 
         /// <summary>
-        /// Sets the opacity level (0 (transparent) to 1.0) of the ImageMapType tiles.
+        /// Sets the opacity level (0 (transparent) to 1.0) of the ImageMapType
+        /// tiles.
         /// </summary>
         /// <param name="opacity">
         /// The opacity.

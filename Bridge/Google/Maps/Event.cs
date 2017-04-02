@@ -12,7 +12,9 @@ namespace Bridge.Google.Maps
     public static class Event
     {
         /// <summary>
-        /// Cross browser event handler registration. This listener is removed by calling removeListener(handle) for the handle that is returned by this function.
+        /// Cross browser event handler registration. This listener is removed
+        /// by calling removeListener(handle) for the handle that is returned
+        /// by this function.
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -32,7 +34,9 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddDomListener(object instance, string eventName, Action handler, bool capture = false);
 
         /// <summary>
-        /// Cross browser event handler registration. This listener is removed by calling removeListener(handle) for the handle that is returned by this function.
+        /// Cross browser event handler registration. This listener is removed
+        /// by calling removeListener(handle) for the handle that is returned
+        /// by this function.
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -55,7 +59,8 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddDomListener<T>(object instance, string eventName, Action<T> handler, bool capture = false);
 
         /// <summary>
-        /// Wrapper around addDomListener that removes the listener after the first event.
+        /// Wrapper around addDomListener that removes the listener after the
+        /// first event.
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -75,7 +80,8 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddDomListenerOnce(object instance, string eventName, Action handler, bool capture = false);
 
         /// <summary>
-        /// Wrapper around addDomListener that removes the listener after the first event.
+        /// Wrapper around addDomListener that removes the listener after the
+        /// first event.
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -98,7 +104,9 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddDomListenerOnce<T>(object instance, string eventName, Action<T> handler, bool capture = false);
 
         /// <summary>
-        /// Adds the given listener function to the given event name for the given object instance. Returns an identifier for this listener that can be used with removeListener().
+        /// Adds the given listener function to the given event name for the
+        /// given object instance. Returns an identifier for this listener that
+        /// can be used with removeListener().
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -118,7 +126,9 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddListener<T>(object instance, string eventName, T handler);
 
         /// <summary>
-        /// Adds the given listener function to the given event name for the given object instance. Returns an identifier for this listener that can be used with removeListener().
+        /// Adds the given listener function to the given event name for the
+        /// given object instance. Returns an identifier for this listener that
+        /// can be used with removeListener().
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -135,7 +145,9 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddListener(object instance, string eventName, Action handler);
 
         /// <summary>
-        /// Adds the given listener function to the given event name for the given object instance. Returns an identifier for this listener that can be used with removeListener().
+        /// Adds the given listener function to the given event name for the
+        /// given object instance. Returns an identifier for this listener that
+        /// can be used with removeListener().
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -155,7 +167,9 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddListener<T>(object instance, string eventName, Action<T> handler);
 
         /// <summary>
-        /// Adds the given listener function to the given event name for the given object instance. Returns an identifier for this listener that can be used with removeListener().
+        /// Adds the given listener function to the given event name for the
+        /// given object instance. Returns an identifier for this listener that
+        /// can be used with removeListener().
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -178,7 +192,8 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddListener<T, U>(object instance, string eventName, Action<T, U> handler);
 
         /// <summary>
-        /// Like addListener, but the handler removes itself after handling the first event.
+        /// Like addListener, but the handler removes itself after handling the
+        /// first event.
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -198,7 +213,8 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddListenerOnce<T>(object instance, string eventName, T handler);
 
         /// <summary>
-        /// Like addListener, but the handler removes itself after handling the first event.
+        /// Like addListener, but the handler removes itself after handling the
+        /// first event.
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -215,7 +231,8 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddListenerOnce(object instance, string eventName, Action handler);
 
         /// <summary>
-        /// Like addListener, but the handler removes itself after handling the first event.
+        /// Like addListener, but the handler removes itself after handling the
+        /// first event.
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -235,7 +252,8 @@ namespace Bridge.Google.Maps
         public extern static MapsEventListener AddListenerOnce<T>(object instance, string eventName, Action<T> handler);
 
         /// <summary>
-        /// Like addListener, but the handler removes itself after handling the first event.
+        /// Like addListener, but the handler removes itself after handling the
+        /// first event.
         /// </summary>
         /// <param name="instance">
         /// The instance.
@@ -277,7 +295,8 @@ namespace Bridge.Google.Maps
         public extern static void ClearListeners(object instance, string eventName);
 
         /// <summary>
-        /// Removes the given listener, which should have been returned by addListener above. Equivalent to calling listener.remove().
+        /// Removes the given listener, which should have been returned by
+        /// addListener above. Equivalent to calling listener.remove().
         /// </summary>
         /// <param name="listener">
         /// The listener.
@@ -285,7 +304,8 @@ namespace Bridge.Google.Maps
         public extern static void RemoveListener(MapsEventListener listener);
 
         /// <summary>
-        /// Triggers the given event. All arguments after eventName are passed as arguments to the listeners.
+        /// Triggers the given event. All arguments after eventName are passed
+        /// as arguments to the listeners.
         /// </summary>
         /// <param name="instance">
         /// The instance.

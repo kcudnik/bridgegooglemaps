@@ -34,12 +34,14 @@ namespace Bridge.Google.Maps
         public Time DepartureTime;
 
         /// <summary>
-        /// The direction in which to travel on this line, as it is marked on the vehicle or at the departure stop.
+        /// The direction in which to travel on this line, as it is marked on
+        /// the vehicle or at the departure stop.
         /// </summary>
         public string Headsign;
 
         /// <summary>
-        /// The expected number of seconds between equivalent vehicles at this stop.
+        /// The expected number of seconds between equivalent vehicles at this
+        /// stop.
         /// </summary>
         public double Headway;
 
@@ -49,7 +51,8 @@ namespace Bridge.Google.Maps
         public TransitLine Line;
 
         /// <summary>
-        /// The number of stops on this step. Includes the arrival stop, but not the departure stop.
+        /// The number of stops on this step. Includes the arrival stop, but
+        /// not the departure stop.
         /// </summary>
         [Name("num_stops")]
         public int NumStops;

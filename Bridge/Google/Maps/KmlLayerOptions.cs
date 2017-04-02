@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// This object defines the properties that can be set on a KmlLayer object.
+    /// This object defines the properties that can be set on a KmlLayer
+    /// object.
     /// </summary>
     [External]
     [ObjectLiteral]
@@ -20,7 +21,10 @@ namespace Bridge.Google.Maps
         public Map Map;
 
         /// <summary>
-        /// By default, the input map is centered and zoomed to the bounding box of the contents of the layer. If this option is set to true, the viewport is left unchanged, unless the map's center and zoom were never set.
+        /// By default, the input map is centered and zoomed to the bounding
+        /// box of the contents of the layer. If this option is set to true,
+        /// the viewport is left unchanged, unless the map's center and zoom
+        /// were never set.
         /// </summary>
         public bool PreserveViewport;
 
@@ -30,7 +34,8 @@ namespace Bridge.Google.Maps
         public bool ScreenOverlays;
 
         /// <summary>
-        /// Suppress the rendering of info windows when layer features are clicked.
+        /// Suppress the rendering of info windows when layer features are
+        /// clicked.
         /// </summary>
         public bool SuppressInfoWindows;
 

@@ -11,7 +11,8 @@ namespace Bridge.Google.Maps
     public class DirectionsService
     {
         /// <summary>
-        /// Creates a new instance of a DirectionsService that sends directions queries to Google servers.
+        /// Creates a new instance of a DirectionsService that sends directions
+        /// queries to Google servers.
         /// </summary>
         public extern DirectionsService();
 

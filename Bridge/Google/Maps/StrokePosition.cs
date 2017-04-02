@@ -11,7 +11,8 @@ namespace Bridge.Google.Maps
     public enum StrokePosition
     {
         /// <summary>
-        /// The stroke is centered on the polygon's path, with half the stroke inside the polygon and half the stroke outside the polygon.
+        /// The stroke is centered on the polygon's path, with half the stroke
+        /// inside the polygon and half the stroke outside the polygon.
         /// </summary>
         [Name("CENTER")]
         Center,

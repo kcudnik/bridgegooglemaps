@@ -26,7 +26,11 @@ namespace Bridge.Google.Maps.Geometry
         public extern static bool ContainsLocation(LatLng location, Polygon poly);
 
         /// <summary>
-        /// Computes whether the given point lies on or near to a polyline, or the edge of a polygon, within a specified tolerance. Returns true when the difference between the latitude and longitude of the supplied point, and the closest point on the edge, is less than the tolerance. The tolerance defaults to 10-9 degrees.
+        /// Computes whether the given point lies on or near to a polyline, or
+        /// the edge of a polygon, within a specified tolerance. Returns true
+        /// when the difference between the latitude and longitude of the
+        /// supplied point, and the closest point on the edge, is less than the
+        /// tolerance. The tolerance defaults to 10-9 degrees.
         /// </summary>
         /// <param name="point">
         /// The point.

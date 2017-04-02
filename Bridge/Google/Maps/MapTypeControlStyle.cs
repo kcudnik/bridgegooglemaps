@@ -11,7 +11,9 @@ namespace Bridge.Google.Maps
     public enum MapTypeControlStyle
     {
         /// <summary>
-        /// Uses the default map type control. When the DEFAULT control is shown, it will vary according to window size and other factors. The DEFAULT control may change in future versions of the API.
+        /// Uses the default map type control. When the DEFAULT control is
+        /// shown, it will vary according to window size and other factors. The
+        /// DEFAULT control may change in future versions of the API.
         /// </summary>
         [Name("DEFAULT")]
         Default,

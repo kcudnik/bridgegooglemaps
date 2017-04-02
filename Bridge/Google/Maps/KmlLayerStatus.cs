@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// The status returned by KmlLayer on the completion of loading a document.
+    /// The status returned by KmlLayer on the completion of loading a
+    /// document.
     /// </summary>
     [External]
     [Enum(Emit.Name)]
@@ -11,7 +12,8 @@ namespace Bridge.Google.Maps
     public enum KmlLayerStatus
     {
         /// <summary>
-        /// The document could not be found. Most likely it is an invalid URL, or the document is not publicly available.
+        /// The document could not be found. Most likely it is an invalid URL,
+        /// or the document is not publicly available.
         /// </summary>
         [Name("DOCUMENT_NOT_FOUND")]
         DocumentNotFound,
@@ -53,7 +55,8 @@ namespace Bridge.Google.Maps
         Ok,
 
         /// <summary>
-        /// The document could not be loaded within a reasonable amount of time.
+        /// The document could not be loaded within a reasonable amount of
+        /// time.
         /// </summary>
         [Name("TIMED_OUT")]
         TimedOut,

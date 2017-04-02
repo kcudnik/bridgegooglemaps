@@ -10,7 +10,12 @@ namespace Bridge.Google.Maps
     public class Polyline : MVCObject
     {
         /// <summary>
-        /// Create a polyline using the passed PolylineOptions, which specify both the path of the polyline and the stroke style to use when drawing the polyline. You may pass either an array of LatLngs or an MVCArray of LatLngs when constructing a polyline, though simple arrays are converted to MVCArrays within the polyline upon instantiation.
+        /// Create a polyline using the passed PolylineOptions, which specify
+        /// both the path of the polyline and the stroke style to use when
+        /// drawing the polyline. You may pass either an array of LatLngs or an
+        /// MVCArray of LatLngs when constructing a polyline, though simple
+        /// arrays are converted to MVCArrays within the polyline upon
+        /// instantiation.
         /// </summary>
         /// <param name="opts">The options.</param>
         public extern Polyline(PolylineOptions opts = null);
@@ -56,7 +61,8 @@ namespace Bridge.Google.Maps
         public extern bool GetVisible();
 
         /// <summary>
-        /// If set to true, the user can drag this shape over the map. The geodesic property defines the mode of dragging.
+        /// If set to true, the user can drag this shape over the map. The
+        /// geodesic property defines the mode of dragging.
         /// </summary>
         /// <param name="flag">
         /// The flag.
@@ -64,7 +70,8 @@ namespace Bridge.Google.Maps
         public extern void SetDraggable(bool flag);
 
         /// <summary>
-        /// If set to true, the user can edit this shape by dragging the control points shown at the vertices and on each segment.
+        /// If set to true, the user can edit this shape by dragging the
+        /// control points shown at the vertices and on each segment.
         /// </summary>
         /// <param name="flag">
         /// The flag.
@@ -72,7 +79,8 @@ namespace Bridge.Google.Maps
         public extern void SetEditable(bool flag);
 
         /// <summary>
-        /// Renders this shape on the specified map. If map is set to null, the shape will be removed.
+        /// Renders this shape on the specified map. If map is set to null, the
+        /// shape will be removed.
         /// </summary>
         /// <param name="map">
         /// The map.

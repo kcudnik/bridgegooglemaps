@@ -10,7 +10,8 @@ namespace Bridge.Google.Maps
     public class Distance
     {
         /// <summary>
-        /// A string representation of the distance value, using the UnitSystem specified in the request.
+        /// A string representation of the distance value, using the UnitSystem
+        /// specified in the request.
         /// </summary>
         public string Text;
 

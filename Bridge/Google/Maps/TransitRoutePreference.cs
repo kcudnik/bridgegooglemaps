@@ -11,13 +11,15 @@ namespace Bridge.Google.Maps
     public enum TransitRoutePreference
     {
         /// <summary>
-        /// Specifies that the calculated route should prefer a limited number of transfers.
+        /// Specifies that the calculated route should prefer a limited number
+        /// of transfers.
         /// </summary>
         [Name("FEWER_TRANSFERS")]
         FewerTransfers,
 
         /// <summary>
-        /// Specifies that the calculated route should prefer limited amounts of walking.
+        /// Specifies that the calculated route should prefer limited amounts
+        /// of walking.
         /// </summary>
         [Name("LESS_WALKING")]
         LessWalking

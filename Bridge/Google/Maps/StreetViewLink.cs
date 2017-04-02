@@ -20,7 +20,8 @@ namespace Bridge.Google.Maps
         public double Heading;
 
         /// <summary>
-        /// A unique identifier for the panorama. This id is stable within a session but unstable across sessions.
+        /// A unique identifier for the panorama. This id is stable within a
+        /// session but unstable across sessions.
         /// </summary>
         public string Pano;
     }

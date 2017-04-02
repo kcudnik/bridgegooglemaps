@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// Each MapTypeStyleElementType distinguishes between the different representations of a feature.
+    /// Each MapTypeStyleElementType distinguishes between the different
+    /// representations of a feature.
     /// </summary>
     [External]
     [Enum(Emit.Name)]

@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// The status returned by the DirectionsService on the completion of a call to route().
+    /// The status returned by the DirectionsService on the completion of a
+    /// call to route().
     /// </summary>
     [External]
     [Enum(Emit.Name)]
@@ -17,13 +18,17 @@ namespace Bridge.Google.Maps
         InvalidRequest,
 
         /// <summary>
-        /// Too many DirectionsWaypoints were provided in the DirectionsRequest. The total allowed waypoints is 8, plus the origin and destination. Maps API for Work customers are allowed 23 waypoints, plus the origin, and destination.
+        /// Too many DirectionsWaypoints were provided in the
+        /// DirectionsRequest. The total allowed waypoints is 8, plus the
+        /// origin and destination. Maps API for Work customers are allowed 23
+        /// waypoints, plus the origin, and destination.
         /// </summary>
         [Name("MAX_WAYPOINTS_EXCEEDED")]
         MaxWaypointsExceeded,
 
         /// <summary>
-        /// At least one of the origin, destination, or waypoints could not be geocoded.
+        /// At least one of the origin, destination, or waypoints could not be
+        /// geocoded.
         /// </summary>
         [Name("NOT_FOUND")]
         NotFound,
@@ -35,7 +40,8 @@ namespace Bridge.Google.Maps
         Ok,
 
         /// <summary>
-        /// The webpage has gone over the requests limit in too short a period of time.
+        /// The webpage has gone over the requests limit in too short a period
+        /// of time.
         /// </summary>
         [Name("OVER_QUERY_LIMIT")]
         OverQueryLimit,
@@ -47,7 +53,8 @@ namespace Bridge.Google.Maps
         RequestDenied,
 
         /// <summary>
-        /// A directions request could not be processed due to a server error. The request may succeed if you try again.
+        /// A directions request could not be processed due to a server error.
+        /// The request may succeed if you try again.
         /// </summary>
         [Name("UNKNOWN_ERROR")]
         UnknownError,

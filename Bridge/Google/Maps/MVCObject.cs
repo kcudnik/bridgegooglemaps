@@ -4,7 +4,11 @@ namespace Bridge.Google.Maps
     using System;
 
     /// <summary>
-    /// The MVCObject constructor is guaranteed to be an empty function, and so you may inherit from MVCObject by simply writing MySubclass.prototype = new google.maps.MVCObject();. Unless otherwise noted, this is not true of other classes in the API, and inheriting from other classes in the API is not supported.
+    /// The MVCObject constructor is guaranteed to be an empty function, and so
+    /// you may inherit from MVCObject by simply writing MySubclass.prototype =
+    /// new google.maps.MVCObject();. Unless otherwise noted, this is not true
+    /// of other classes in the API, and inheriting from other classes in the
+    /// API is not supported.
     /// </summary>
     [External]
     [Namespace("google.maps")]
@@ -16,7 +20,9 @@ namespace Bridge.Google.Maps
         public extern MVCObject();
 
         /// <summary>
-        /// Adds the given listener function to the given event name. Returns an identifier for this listener that can be used with google.maps.event.removeListener.
+        /// Adds the given listener function to the given event name. Returns
+        /// an identifier for this listener that can be used with
+        /// google.maps.event.removeListener.
         /// </summary>
         /// <param name="name">
         /// The name.
@@ -47,7 +53,8 @@ namespace Bridge.Google.Maps
         public extern void BindTo(string key, MVCObject target, string targetKey = null, bool noNotify = false);
 
         /// <summary>
-        /// Generic handler for state changes. Override this in derived classes to handle arbitrary state changes.
+        /// Generic handler for state changes. Override this in derived classes
+        /// to handle arbitrary state changes.
         /// </summary>
         /// <param name="key">
         /// The key.
@@ -66,7 +73,9 @@ namespace Bridge.Google.Maps
         public extern object Get(string key);
 
         /// <summary>
-        /// Notify all observers of a change on this property. This notifies both objects that are bound to the object's property as well as the object that it is bound to.
+        /// Notify all observers of a change on this property. This notifies
+        /// both objects that are bound to the object's property as well as the
+        /// object that it is bound to.
         /// </summary>
         /// <param name="key">
         /// The key.
@@ -93,7 +102,9 @@ namespace Bridge.Google.Maps
         public extern void SetValues(object values);
 
         /// <summary>
-        /// Removes a binding. Unbinding will set the unbound property to the current value. The object will not be notified, as the value has not changed.
+        /// Removes a binding. Unbinding will set the unbound property to the
+        /// current value. The object will not be notified, as the value has
+        /// not changed.
         /// </summary>
         /// <param name="key">
         /// The key.

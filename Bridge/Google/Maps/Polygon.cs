@@ -3,14 +3,22 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// A polygon (like a polyline) defines a series of connected coordinates in an ordered sequence; additionally, polygons form a closed loop and define a filled region.
+    /// A polygon (like a polyline) defines a series of connected coordinates
+    /// in an ordered sequence; additionally, polygons form a closed loop and
+    /// define a filled region.
     /// </summary>
     [External]
     [Namespace("google.maps")]
     public class Polygon : MVCObject
     {
         /// <summary>
-        /// Create a polygon using the passed PolygonOptions, which specify the polygon's path, the stroke style for the polygon's edges, and the fill style for the polygon's interior regions. A polygon may contain one or more paths, where each path consists of an array of LatLngs. You may pass either an array of LatLngs or an MVCArray of LatLngs when constructing these paths. Arrays are converted to MVCArrays within the polygon upon instantiation.
+        /// Create a polygon using the passed PolygonOptions, which specify the
+        /// polygon's path, the stroke style for the polygon's edges, and the
+        /// fill style for the polygon's interior regions. A polygon may
+        /// contain one or more paths, where each path consists of an array of
+        /// LatLngs. You may pass either an array of LatLngs or an MVCArray of
+        /// LatLngs when constructing these paths. Arrays are converted to
+        /// MVCArrays within the polygon upon instantiation.
         /// </summary>
         /// <param name="opts">The options.</param>
         public extern Polygon(PolygonOptions opts = null);
@@ -64,7 +72,8 @@ namespace Bridge.Google.Maps
         public extern bool GetVisible();
 
         /// <summary>
-        /// If set to true, the user can drag this shape over the map. The geodesic property defines the mode of dragging.
+        /// If set to true, the user can drag this shape over the map. The
+        /// geodesic property defines the mode of dragging.
         /// </summary>
         /// <param name="flag">
         /// The flag.
@@ -72,7 +81,8 @@ namespace Bridge.Google.Maps
         public extern void SetDraggable(bool flag);
 
         /// <summary>
-        /// If set to true, the user can edit this shape by dragging the control points shown at the vertices and on each segment.
+        /// If set to true, the user can edit this shape by dragging the
+        /// control points shown at the vertices and on each segment.
         /// </summary>
         /// <param name="flag">
         /// The flag.
@@ -80,7 +90,8 @@ namespace Bridge.Google.Maps
         public extern void SetEditable(bool flag);
 
         /// <summary>
-        /// Renders this shape on the specified map. If map is set to null, the shape will be removed.
+        /// Renders this shape on the specified map. If map is set to null, the
+        /// shape will be removed.
         /// </summary>
         /// <param name="map">
         /// The map.
@@ -109,7 +120,8 @@ namespace Bridge.Google.Maps
         /// <param name="path">
         /// The path.
         /// </param>
-        public extern void SetPaths(Union<MVCArray<LatLng>, LatLng[], LatLngLiteral[], LatLng[][], LatLngLiteral[][], MVCArray<MVCArray<LatLng>>> path);
+        public extern void SetPaths(
+            Union<MVCArray<LatLng>, LatLng[], LatLngLiteral[], LatLng[][], LatLngLiteral[][], MVCArray<MVCArray<LatLng>>> path);
 
         /// <summary>
         /// Hides this poly if set to false.

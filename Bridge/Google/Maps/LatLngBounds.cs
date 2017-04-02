@@ -3,14 +3,17 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// A LatLngBounds instance represents a rectangle in geographical coordinates, including one that crosses the 180 degrees longitudinal meridian.
+    /// A LatLngBounds instance represents a rectangle in geographical
+    /// coordinates, including one that crosses the 180 degrees longitudinal
+    /// meridian.
     /// </summary>
     [External]
     [Namespace("google.maps")]
     public class LatLngBounds
     {
         /// <summary>
-        /// Constructs a rectangle from the points at its south-west and north-east corners.
+        /// Constructs a rectangle from the points at its south-west and
+        /// north-east corners.
         /// </summary>
         /// <param name="sw">South west.</param>
         /// <param name="ne">North east.</param>
@@ -74,7 +77,8 @@ namespace Bridge.Google.Maps
         public extern LatLng GetSouthWest();
 
         /// <summary>
-        /// Returns true if this bounds shares any points with the other bounds.
+        /// Returns true if this bounds shares any points with the other
+        /// bounds.
         /// </summary>
         /// <param name="other">
         /// The other.
@@ -93,7 +97,8 @@ namespace Bridge.Google.Maps
         public extern bool IsEmpty();
 
         /// <summary>
-        /// Converts to JSON representation. This function is intended to be used via JSON.stringify.
+        /// Converts to JSON representation. This function is intended to be
+        /// used via JSON.stringify.
         /// </summary>
         /// <returns>
         /// The <see cref="LatLngBoundsLiteral"/>.
@@ -117,7 +122,10 @@ namespace Bridge.Google.Maps
         public override extern string ToString();
 
         /// <summary>
-        /// Returns a string of the form "lat_lo,lng_lo,lat_hi,lng_hi" for this bounds, where "lo" corresponds to the southwest corner of the bounding box, while "hi" corresponds to the northeast corner of that box.
+        /// Returns a string of the form "lat_lo,lng_lo,lat_hi,lng_hi" for this
+        /// bounds, where "lo" corresponds to the southwest corner of the
+        /// bounding box, while "hi" corresponds to the northeast corner of
+        /// that box.
         /// </summary>
         /// <param name="precision">
         /// The precision.
@@ -128,7 +136,8 @@ namespace Bridge.Google.Maps
         public extern string ToUrlValue(double precision = 0);
 
         /// <summary>
-        /// Extends this bounds to contain the union of this and the given bounds.
+        /// Extends this bounds to contain the union of this and the given
+        /// bounds.
         /// </summary>
         /// <param name="other">
         /// The other.

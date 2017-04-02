@@ -3,7 +3,8 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// The valid transit mode e.g. bus that can be specified in a TransitOptions.
+    /// The valid transit mode e.g. bus that can be specified in a
+    /// TransitOptions.
     /// </summary>
     [External]
     [Enum(Emit.Name)]
