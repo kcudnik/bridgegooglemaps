@@ -42,12 +42,19 @@ namespace Bridge.Google.Maps
         public extern Map(Element mapDiv, MapOptions opts = null);
 
         /// <summary>
-        /// Sets the viewport to contain the given bounds.
+        /// Note: When the map is set to display: none, the fitBounds function
+        /// reads the map's size as 0x0, and therefore does not do anything. To
+        /// change the viewport while the map is hidden, set the map to
+        /// visibility: hidden, thereby ensuring the map div has an actual
+        /// size.
         /// </summary>
         /// <param name="bounds">
         /// The bounds.
         /// </param>
-        public extern void FitBounds(Union<LatLngBounds, LatLngBoundsLiteral> bounds);
+        /// <param name="padding">
+        /// The padding.
+        /// </param>
+        public extern void FitBounds(Union<LatLngBounds, LatLngBoundsLiteral> bounds, int? padding = null);
 
         /// <summary>
         /// Returns the lat/lng bounds of the current viewport. If more than

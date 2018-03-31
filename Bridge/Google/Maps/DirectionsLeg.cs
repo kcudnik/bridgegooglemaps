@@ -92,6 +92,13 @@ namespace Bridge.Google.Maps
         /// An array of waypoints along this leg that were not specified in the
         /// original request, either as a result of a user dragging the
         /// polyline or selecting an alternate route.
+        ///
+        /// Deprecated in alternative routes. Version 3.27 will be the last
+        /// version of the API that adds extra via_waypoints in alternative
+        /// routes.  When using the Directions Service to implement draggable
+        /// directions, it is recommended to disable dragging of alternative
+        /// routes. Only the main route should be draggable. Users can drag the
+        /// main route until it matches an alternative route.
         /// </summary>
         [Name("via_waypoints")]
         public LatLng[] ViaWaypoints;

@@ -4,8 +4,12 @@ namespace Bridge.Google.Maps
 
     /// <summary>
     /// A polygon (like a polyline) defines a series of connected coordinates
-    /// in an ordered sequence; additionally, polygons form a closed loop and
-    /// define a filled region.
+    /// in an ordered sequence. Additionally, polygons form a closed loop and
+    /// define a filled region. See the samples in the developer's guide,
+    /// starting with a simple polygon, a polygon with a hole, and more. Note
+    /// that you can also use the Data layer to create a polygon. The Data
+    /// layer offers a simpler way of creating holes because it handles the
+    /// order of the inner and outer paths for you.
     /// </summary>
     [External]
     [Namespace("google.maps")]

@@ -3,7 +3,9 @@ namespace Bridge.Google.Maps
     using Bridge;
 
     /// <summary>
-    /// Identifiers for common MapTypes.
+    /// Identifiers for common MapTypes. Specify these by value, or by using
+    /// the constant's name. For example, 'satellite' or
+    /// google.maps.MapTypeId.SATELLITE.
     /// </summary>
     [External]
     [Enum(Emit.Name)]

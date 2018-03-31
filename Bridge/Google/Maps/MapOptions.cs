@@ -35,13 +35,17 @@ namespace Bridge.Google.Maps
 
         /// <summary>
         /// Enables/disables zoom and center on double click. Enabled by
-        /// default.
+        /// default. Note: This property is not recommended. To disable zooming
+        /// on double click, you can use the gestureHandling property, and set
+        /// it to "none".
         /// </summary>
         public bool DisableDoubleClickZoom;
 
         /// <summary>
         /// If false, prevents the map from being dragged. Dragging is enabled
-        /// by default.
+        /// by default. Note: This property is deprecated. To disable dragging
+        /// on the map, you can use the gestureHandling property, and set it to
+        /// "none".
         /// </summary>
         public bool Draggable;
 
@@ -74,6 +78,22 @@ namespace Bridge.Google.Maps
         public FullscreenControlOptions FullscreenControlOptions;
 
         /// <summary>
+        /// This setting controls how the API handles gestures on the map.
+        /// Allowed values:
+        /// * "cooperative": Scroll events and one-finger touch gestures scroll
+        /// the page, and do not zoom or pan the map. Two-finger touch gestures
+        /// pan and zoom the map. Scroll events with a ctrl key or mac key
+        /// pressed zoom the map.  In this mode the map cooperates with the
+        /// page.
+        /// * "greedy": All touch gestures and scroll events pan or zoom the map.
+        /// * "none": The map cannot be panned or zoomed by user gestures.
+        /// * "auto": (default) Gesture handling is either cooperative or
+        /// greedy, depending on whether the page is scrollable or in an
+        /// iframe.
+        /// </summary>
+        public string GestureHandling;
+
+        /// <summary>
         /// The heading for aerial imagery in degrees measured clockwise from
         /// cardinal direction North. Headings are snapped to the nearest
         /// available angle for which imagery is available.
@@ -85,11 +105,6 @@ namespace Bridge.Google.Maps
         /// Keyboard shortcuts are enabled by default.
         /// </summary>
         public bool KayboardShorcuts;
-
-        /// <summary>
-        /// True if Map Maker tiles should be used instead of regular tiles.
-        /// </summary>
-        public bool MapMarker;
 
         /// <summary>
         /// The initial enabled/disabled state of the Map type control.
@@ -104,19 +119,21 @@ namespace Bridge.Google.Maps
         /// <summary>
         /// The initial Map mapTypeId. Defaults to ROADMAP.
         /// </summary>
-        public MapTypeId MapTypeId;
+        public Union<MapTypeId, string> MapTypeId;
 
         /// <summary>
         /// The maximum zoom level which will be displayed on the map. If
         /// omitted, or set to null, the maximum zoom from the current map type
-        /// is used instead.
+        /// is used instead. Valid values: Integers between zero, and up to the
+        /// supported maximum zoom level.
         /// </summary>
         public int MaxZoom;
 
         /// <summary>
         /// The minimum zoom level which will be displayed on the map. If
         /// omitted, or set to null, the minimum zoom from the current map type
-        /// is used instead.
+        /// is used instead. Valid values: Integers between zero, and up to the
+        /// supported maximum zoom level.
         /// </summary>
         public int MinZoom;
 
@@ -190,21 +207,13 @@ namespace Bridge.Google.Maps
         public ScaleControlOptions ScaleControlOptions;
 
         /// <summary>
-        /// If false, disables scrollwheel zooming on the map. The scrollwheel
-        /// is enabled by default.
+        /// If false, disables zooming on the map using a mouse scroll wheel.
+        /// The scrollwheel is enabled by default.  Note: This property is not
+        /// recommended. To disable zooming using scrollwheel, you can use the
+        /// gestureHandling property, and set it to either "cooperative" or
+        /// "none".
         /// </summary>
         public bool Scrollwheel;
-
-        /// <summary>
-        /// The enabled/disabled state of the sign in control. This option only
-        /// applies if signed_in=true has been passed as a URL parameter in the
-        /// bootstrap request. You may want to use this option to hide the
-        /// map's sign in control if you have provided another way for your
-        /// users to sign in, such as the Google Sign-In button. This option
-        /// does not affect the visibility of the Google avatar shown when the
-        /// user is already signed in.
-        /// </summary>
-        public bool SignInControl;
 
         /// <summary>
         /// A StreetViewPanorama to display when the Street View pegman is
@@ -257,7 +266,8 @@ namespace Bridge.Google.Maps
         public int Zoom;
 
         /// <summary>
-        /// The enabled/disabled state of the Zoom control.
+        /// The initial Map zoom level. Required. Valid values: Integers
+        /// between zero, and up to the supported maximum zoom level.
         /// </summary>
         public bool ZoomControl;
 

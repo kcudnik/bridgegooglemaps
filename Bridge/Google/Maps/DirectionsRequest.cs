@@ -31,7 +31,7 @@ namespace Bridge.Google.Maps
         /// Location of destination. This can be specified as either a string
         /// to be geocoded, or a LatLng, or a Place. Required.
         /// </summary>
-        public Union<string, LatLng, Place> Destination;
+        public Union<string, LatLng, Place, LatLngLiteral> Destination;
 
         /// <summary>
         /// Settings that apply only to requests where travelMode is DRIVING.
@@ -52,7 +52,7 @@ namespace Bridge.Google.Maps
         /// Location of origin. This can be specified as either a string to be
         /// geocoded, or a LatLng, or a Place. Required
         /// </summary>
-        public Union<string, LatLng, Place> Origin;
+        public Union<string, LatLng, Place, LatLngLiteral> Origin;
 
         /// <summary>
         /// Whether or not route alternatives should be provided. Optional.
@@ -82,12 +82,11 @@ namespace Bridge.Google.Maps
         public UnitSystem UnitSystem;
 
         /// <summary>
-        /// Array of intermediate waypoints. Directions will be calculated from
-        /// the origin to the destination by way of each waypoint in this
-        /// array. The maximum allowed waypoints is 8, plus the origin, and
-        /// destination. Maps API for Work customers are allowed 23 waypoints,
-        /// plus the origin, and destination. Waypoints are not supported for
-        /// transit directions. Optional.
+        /// Array of intermediate waypoints. Directions are calculated from the
+        /// origin to the destination by way of each waypoint in this array.
+        /// See the developer's guide for the maximum number of waypoints
+        /// allowed. Waypoints are not supported for transit directions.
+        /// Optional.
         /// </summary>
         public DirectionsWaypoint[] Waypoints;
     }

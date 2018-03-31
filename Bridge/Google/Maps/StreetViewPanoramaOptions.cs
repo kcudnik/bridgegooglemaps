@@ -61,6 +61,29 @@ namespace Bridge.Google.Maps
         public bool LinksControl;
 
         /// <summary>
+        /// Whether motion tracking is on or off. Enabled by default when the
+        /// motion tracking control is present, so that the POV (point of view)
+        /// follows the orientation of the device. This is primarily applicable
+        /// to mobile devices. If motionTracking is set to false while
+        /// motionTrackingControl is enabled, the motion tracking control
+        /// appears but tracking is off. The user can tap the motion tracking
+        /// control to toggle this option.
+        /// </summary>
+        public bool MotionTracking;
+
+        /// <summary>
+        /// The enabled/disabled state of the motion tracking control. Enabled
+        /// by default when the device has motion data, so that the control
+        /// appears on the map. This is primarily applicable to mobile devices.
+        /// </summary>
+        public bool MotionTrackingControl;
+
+        /// <summary>
+        /// The display options for the motion tracking control.
+        /// </summary>
+        public MotionTrackingControlOptions MotionTrackingControlOptions;
+
+        /// <summary>
         /// The enabled/disabled state of the pan control.
         /// </summary>
         public bool PanControl;
@@ -75,13 +98,6 @@ namespace Bridge.Google.Maps
         /// panorama.
         /// </summary>
         public string Pano;
-
-        /// <summary>
-        /// Custom panorama provider, which takes a string pano id and returns
-        /// an object defining the panorama given that id. This function must
-        /// be defined to specify custom panorama imagery.
-        /// </summary>
-        public StreetViewPanoramaData PanoProvider;
 
         /// <summary>
         /// The LatLng position of the Street View panorama.
@@ -101,9 +117,22 @@ namespace Bridge.Google.Maps
         public bool Scrollwheel;
 
         /// <summary>
+        /// The display of street names on the panorama. If this value is not
+        /// specified, or is set to true, street names are displayed on the
+        /// panorama. If set to false, street names are not displayed.
+        /// </summary>
+        public bool ShowRoadLabels;
+
+        /// <summary>
         /// If true, the Street View panorama is visible on load.
         /// </summary>
         public bool Visible;
+
+        /// <summary>
+        /// The zoom of the panorama, specified as a number. A zoom of 0 gives
+        /// a 180 degrees Field of View.
+        /// </summary>
+        public bool Zoom;
 
         /// <summary>
         /// The enabled/disabled state of the zoom control.

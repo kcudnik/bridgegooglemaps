@@ -4,6 +4,8 @@ namespace Bridge.Google.Maps
 
     /// <summary>
     /// The valid transit route type that can be specified in a TransitOptions.
+    /// Specify these by value, or by using the constant's name. For example,
+    /// 'LESS_WALKING' or google.maps.TransitRoutePreference.LESS_WALKING.
     /// </summary>
     [External]
     [Enum(Emit.Name)]

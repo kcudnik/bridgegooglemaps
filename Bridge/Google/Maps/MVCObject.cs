@@ -53,15 +53,6 @@ namespace Bridge.Google.Maps
         public extern void BindTo(string key, MVCObject target, string targetKey = null, bool noNotify = false);
 
         /// <summary>
-        /// Generic handler for state changes. Override this in derived classes
-        /// to handle arbitrary state changes.
-        /// </summary>
-        /// <param name="key">
-        /// The key.
-        /// </param>
-        public extern void Changed(string key);
-
-        /// <summary>
         /// Gets a value.
         /// </summary>
         /// <param name="key">

@@ -9,6 +9,15 @@ namespace Bridge.Google.Maps
     [ObjectLiteral]
     public class TransitFare
     {
-        // This object is empty
+        /// <summary>
+        /// An ISO 4217 currency code indicating the currency in which the fare
+        /// is expressed.
+        /// </summary>
+        public string Currency;
+
+        /// <summary>
+        /// The numerical value of the fare, expressed in the given currency.
+        /// </summary>
+        public double Value;
     }
 }

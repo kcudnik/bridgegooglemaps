@@ -62,7 +62,7 @@ namespace Bridge.Google.Maps
         /// <param name="anchor">
         /// The anchor.
         /// </param>
-        public extern void Open(Union<StreetViewPanorama, Map> map = null, MVCObject anchor = null);
+        public extern void Open(Union<StreetViewPanorama, Map> map = null, object anchor = null);
 
         /// <summary>
         /// The set content.

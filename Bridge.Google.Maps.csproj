@@ -36,7 +36,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Bridge\Google\Maps\Animation.cs" />
-    <Compile Include="Bridge\Google\Maps\Attribution.cs" />
     <Compile Include="Bridge\Google\Maps\Circle.cs" />
     <Compile Include="Bridge\Google\Maps\CircleOptions.cs" />
     <Compile Include="Bridge\Google\Maps\ControlPosition.cs" />
@@ -82,6 +81,7 @@
     <Compile Include="Bridge\Google\Maps\Geometry\Poly.cs" />
     <Compile Include="Bridge\Google\Maps\Geometry\Spherical.cs" />
     <Compile Include="Bridge\Google\Maps\Icon.cs" />
+    <Compile Include="Bridge\Google\Maps\IconMouseEvent.cs" />
     <Compile Include="Bridge\Google\Maps\IconSequence.cs" />
     <Compile Include="Bridge\Google\Maps\ImageMapType.cs" />
     <Compile Include="Bridge\Google\Maps\ImageMapTypeOptions.cs" />
@@ -109,15 +109,13 @@
     <Compile Include="Bridge\Google\Maps\MapTypeId.cs" />
     <Compile Include="Bridge\Google\Maps\MapTypeRegistry.cs" />
     <Compile Include="Bridge\Google\Maps\MapTypeStyle.cs" />
-    <Compile Include="Bridge\Google\Maps\MapTypeStyleElementType.cs" />
-    <Compile Include="Bridge\Google\Maps\MapTypeStyleFeatureType.cs" />
-    <Compile Include="Bridge\Google\Maps\MapTypeStyler.cs" />
     <Compile Include="Bridge\Google\Maps\Marker.cs" />
     <Compile Include="Bridge\Google\Maps\MarkerLabel.cs" />
     <Compile Include="Bridge\Google\Maps\MarkerOptions.cs" />
     <Compile Include="Bridge\Google\Maps\MarkerPlace.cs" />
     <Compile Include="Bridge\Google\Maps\MarkerShape.cs" />
     <Compile Include="Bridge\Google\Maps\MouseEvent.cs" />
+    <Compile Include="Bridge\Google\Maps\MotionTrackingControlOptions.cs" />
     <Compile Include="Bridge\Google\Maps\MVCArray.cs" />
     <Compile Include="Bridge\Google\Maps\MVCObject.cs" />
     <Compile Include="Bridge\Google\Maps\OverlayView.cs" />
@@ -181,6 +179,7 @@
     <Compile Include="Bridge\Google\Maps\UnitSystem.cs" />
     <Compile Include="Bridge\Google\Maps\ZoomControlOptions.cs" />
     <Compile Include="Bridge\Google\Maps\ZoomControlStyle.cs" />
+    <Compile Include="Bridge\Google\Maps\PanoProviderOptions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

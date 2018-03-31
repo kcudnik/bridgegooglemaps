@@ -4,7 +4,9 @@ namespace Bridge.Google.Maps
 
     /// <summary>
     /// The assumptions to use when predicting duration in traffic. Specified
-    /// as part of a DirectionsRequest or DistanceMatrixRequest.
+    /// as part of a DirectionsRequest or DistanceMatrixRequest. Specify these
+    /// by value, or by using the constant's name. For example, 'bestguess' or
+    /// google.maps.TrafficModel.BEST_GUESS.
     /// </summary>
     [External]
     [Enum(Emit.Name)]

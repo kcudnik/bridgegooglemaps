@@ -13,24 +13,28 @@ namespace Bridge.Google.Maps
     public class MapTypeStyle
     {
         /// <summary>
-        /// Selects the element type to which a styler should be applied. An
-        /// element type distinguishes between the different representations of
-        /// a feature. Optional; if elementType is not specified, the value is
-        /// assumed to be 'all'.
+        /// The element to which a styler should be applied. An element is a
+        /// visual aspect of a feature on the map. Example: a label, an icon,
+        /// the stroke or fill applied to the geometry, and more. Optional. If
+        /// elementType is not specified, the value is assumed to be 'all'. For
+        /// details of usage and allowed values, see the style reference.
         /// </summary>
-        public MapTypeStyleElementType ElementType;
+        public string ElementType;
 
         /// <summary>
-        /// Selects the feature, or group of features, to which a styler should
-        /// be applied. Optional; if featureType is not specified, the value is
-        /// assumed to be 'all'.
+        /// The feature, or group of features, to which a styler should be
+        /// applied. Optional. If featureType is not specified, the value is
+        /// assumed to be 'all'. For details of usage and allowed values, see
+        /// the style reference.
         /// </summary>
-        public MapTypeStyleFeatureType FeatureType;
+        public string FeatureType;
 
         /// <summary>
-        /// The style rules to apply to the selectors. The rules are applied to
-        /// the map's elements in the order they are listed in this array.
+        /// The style rules to apply to the selected map features and elements.
+        /// The rules are applied in the order that you specify in this array.
+        /// For guidelines on usage and allowed values, see the style
+        /// reference.
         /// </summary>
-        public MapTypeStyler[] Stylers;
+        public object[] Stylers;
     }
 }

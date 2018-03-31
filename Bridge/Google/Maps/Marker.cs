@@ -34,14 +34,6 @@ namespace Bridge.Google.Maps
         public extern Animation GetAnimation();
 
         /// <summary>
-        /// The get attribution.
-        /// </summary>
-        /// <returns>
-        /// The <see cref="Attribution"/>.
-        /// </returns>
-        public extern Attribution GetAttribution();
-
-        /// <summary>
         /// The get clickable.
         /// </summary>
         /// <returns>
@@ -154,14 +146,6 @@ namespace Bridge.Google.Maps
         /// The animation.
         /// </param>
         public extern void SetAnimation(AnimationDirection animation);
-
-        /// <summary>
-        /// The set attribution.
-        /// </summary>
-        /// <param name="attribution">
-        /// The attribution.
-        /// </param>
-        public extern void SetAttribution(Attribution attribution);
 
         /// <summary>
         /// The set clickable.

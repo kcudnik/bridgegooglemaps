@@ -44,6 +44,14 @@ namespace Bridge.Google.Maps
         public extern StreetViewLocation GetLocation();
 
         /// <summary>
+        /// Returns the state of motion tracker. If true when the user
+        /// physically moves the device and the browser supports it, the Street
+        /// View Panorama tracks the physical movements.
+        /// </summary>
+        /// <returns><c>true</c>, if motion tracking was gotten, <c>false</c> otherwise.</returns>
+        public extern bool GetMotionTracking();
+
+        /// <summary>
         /// Returns the current panorama ID for the Street View panorama. This
         /// id is stable within the browser's current session only.
         /// </summary>
@@ -114,7 +122,10 @@ namespace Bridge.Google.Maps
         /// <param name="provider">
         /// The provider.
         /// </param>
-        public extern void RegisterPanoProvider(Func<string, StreetViewPanoramaData> provider);
+        /// <param name="opt_options">
+        /// The optional options.
+        /// </param>
+        public extern void RegisterPanoProvider(Func<string, StreetViewPanoramaData> provider, PanoProviderOptions opt_options = null);
 
         /// <summary>
         /// Sets the set of navigation links for the Street View panorama.
@@ -123,6 +134,14 @@ namespace Bridge.Google.Maps
         /// The links.
         /// </param>
         public extern void SetLinks(StreetViewLink[] links);
+
+        /// <summary>
+        /// Sets the state of motion tracker. If true when the user physically
+        /// moves the device and the browser supports it, the Street View
+        /// Panorama tracks the physical movements.
+        /// </summary>
+        /// <param name="motionTracking">If set to <c>true</c> motion tracking.</param>
+        public extern void SetMotionTracking(bool motionTracking);
 
         /// <summary>
         /// Sets a collection of key-value pairs.

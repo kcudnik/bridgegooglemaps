@@ -27,6 +27,6 @@ namespace Bridge.Google.Maps
         /// <param name="mapType">
         /// The map type.
         /// </param>
-        public extern void Set(string id, MapTypeId mapType);
+        public extern void Set(string id, Union<MapTypeId, object> mapType);
     }
 }

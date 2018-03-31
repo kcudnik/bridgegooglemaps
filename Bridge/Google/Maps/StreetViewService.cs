@@ -11,6 +11,12 @@ namespace Bridge.Google.Maps
     public class StreetViewService
     {
         /// <summary>
+        /// Creates a StreetViewService, which provides an interface to the
+        /// data stored in the Street View service.
+        /// </summary>
+        public extern StreetViewService();
+
+        /// <summary>
         /// Retrieves the StreetViewPanoramaData for a panorama that matches
         /// the supplied Street View query request. The StreetViewPanoramaData
         /// is passed to the provided callback.

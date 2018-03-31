@@ -28,7 +28,7 @@ namespace Bridge.Google.Maps
         /// <returns>
         /// The <see cref="bool"/>.
         /// </returns>
-        public extern bool Contains(LatLng latLng);
+        public extern bool Contains(Union<LatLng, LatLngLiteral> latLng);
 
         /// <summary>
         /// Returns true if this bounds approximately equals the given bounds.
@@ -50,7 +50,7 @@ namespace Bridge.Google.Maps
         /// <returns>
         /// The <see cref="LatLngBounds"/>.
         /// </returns>
-        public extern LatLngBounds Extend(LatLng point);
+        public extern LatLngBounds Extend(Union<LatLng, LatLngLiteral> point);
 
         /// <summary>
         /// Computes the center of this LatLngBounds

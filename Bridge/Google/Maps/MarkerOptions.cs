@@ -21,14 +21,6 @@ namespace Bridge.Google.Maps
         public Animation Animation;
 
         /// <summary>
-        /// Contains all the information needed to identify your application as
-        /// the source of a save. In this context, 'place' means a business,
-        /// point of interest or geographic location. attribution must be
-        /// specified with a place in order to enable a save.
-        /// </summary>
-        public Attribution Attribution;
-
-        /// <summary>
         /// If true, the marker receives mouse and touch events. Default value
         /// is true.
         /// </summary>
@@ -58,8 +50,7 @@ namespace Bridge.Google.Maps
 
         /// <summary>
         /// Adds a label to the marker. The label can either be a string, or a
-        /// MarkerLabel object. Only the first character of the string will be
-        /// displayed.
+        /// MarkerLabel object.
         /// </summary>
         public Union<string, MarkerLabel> Label;
 
@@ -89,6 +80,11 @@ namespace Bridge.Google.Maps
         /// The info window will contain information about the place and an
         /// option for the user to save it. Only one of position or place can
         /// be specified.
+        /// Note: The signed-in maps feature is deprecated. Versions 3.27 and
+        /// earlier of the Google Maps JavaScript API continue to support
+        /// signed-in maps. A future version will no longer support signed-in
+        /// maps, and will not support saving a place directly from within your
+        /// application. Read more about signed-in maps.
         /// </summary>
         public MarkerPlace Place;
 
