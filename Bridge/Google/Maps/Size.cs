@@ -2,6 +2,8 @@ namespace Bridge.Google.Maps
 {
     using Bridge;
 
+    // TODO could be double
+
     /// <summary>
     /// The size.
     /// </summary>

@@ -2,11 +2,14 @@ namespace Bridge.Google.Maps
 {
     using Bridge;
 
+    // NOTE: no constructor, internally created
+
     /// <summary>
     /// An event listener, created by google.maps.event.addListener() and
     /// friends.
     /// </summary>
     [External]
+    [ObjectLiteral]
     [Namespace("google.maps")]
     public class MapsEventListener
     {

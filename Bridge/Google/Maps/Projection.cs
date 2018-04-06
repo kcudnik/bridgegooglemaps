@@ -3,6 +3,10 @@ namespace Bridge.Google.Maps
     /// <summary>
     /// The Projection interface.
     /// </summary>
+    //[Name("google.maps.Projection")]
+    [External]
+    [Name("Object")]
+    [Convention(Notation.LowerCamelCase, ConventionTarget.Member)]
     public interface Projection
     {
         /// <summary>

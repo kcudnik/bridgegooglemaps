@@ -35,6 +35,9 @@
     <NoWarn>0626,0824</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Bridge\Google\Maps\Animation.cs" />
     <Compile Include="Bridge\Google\Maps\Circle.cs" />
     <Compile Include="Bridge\Google\Maps\CircleOptions.cs" />
@@ -109,6 +112,7 @@
     <Compile Include="Bridge\Google\Maps\MapTypeId.cs" />
     <Compile Include="Bridge\Google\Maps\MapTypeRegistry.cs" />
     <Compile Include="Bridge\Google\Maps\MapTypeStyle.cs" />
+    <Compile Include="Bridge\Google\Maps\MapTypeStyler.cs" />
     <Compile Include="Bridge\Google\Maps\Marker.cs" />
     <Compile Include="Bridge\Google\Maps\MarkerLabel.cs" />
     <Compile Include="Bridge\Google\Maps\MarkerOptions.cs" />
@@ -189,10 +193,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bridge">
-      <HintPath>\opt\app\other\Bridge\Bridge.dll</HintPath>
+      <HintPath>\opt\app\other\Bridge\Bridge.Core.16.8.2\lib\net40\Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Bridge.Html5">
-      <HintPath>\opt\app\other\Bridge\Bridge.Html5.dll</HintPath>
+      <HintPath>\opt\app\other\Bridge\Bridge.Html5.16.8.2\lib\net40\Bridge.Html5.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

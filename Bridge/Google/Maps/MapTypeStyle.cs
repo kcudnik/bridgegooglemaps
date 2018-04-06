@@ -35,6 +35,6 @@ namespace Bridge.Google.Maps
         /// For guidelines on usage and allowed values, see the style
         /// reference.
         /// </summary>
-        public object[] Stylers;
+        public MapTypeStyler[] Stylers;
     }
 }

@@ -12,6 +12,8 @@ namespace Bridge.Google.Maps
     /// </typeparam>
     [External]
     [Namespace("google.maps")]
+    [Name("google.maps.MVCArray")]
+    [IgnoreGeneric]
     public class MVCArray<T> : MVCObject
     {
         /// <summary>

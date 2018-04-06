@@ -2,6 +2,8 @@ namespace Bridge.Google.Maps
 {
     using Bridge;
 
+    // NOTE no constructor, maps internal created
+
     /// <summary>
     /// This object is made available to the OverlayView from within the draw
     /// method. It is not guaranteed to be initialized until draw is called.

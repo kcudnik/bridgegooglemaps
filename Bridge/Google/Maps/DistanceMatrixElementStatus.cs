@@ -2,6 +2,8 @@ namespace Bridge.Google.Maps
 {
     using Bridge;
 
+    // TODO not enum but string
+
     /// <summary>
     /// The element-level status about a particular origin-destination pairing
     /// returned by the DistanceMatrixService upon completion of a distance

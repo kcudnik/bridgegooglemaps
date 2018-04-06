@@ -8,7 +8,6 @@ namespace Bridge.Google.Maps
     /// </summary>
     [External]
     [ObjectLiteral]
-    [Namespace("google.maps")]
     public class FusionTablesLayerOptions
     {
         /// <summary>

@@ -2,6 +2,8 @@ namespace Bridge.Google.Maps
 {
     using Bridge;
 
+    // TODO this is not enum, but string constants
+
     /// <summary>
     /// The status returned by the DirectionsService on the completion of a
     /// call to route().
