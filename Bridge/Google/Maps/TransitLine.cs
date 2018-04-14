@@ -1,9 +1,7 @@
 namespace Bridge.Google.Maps
 {
-    using Bridge;
-
     /// <summary>
-    /// The transit line.
+    ///     The transit line.
     /// </summary>
     [External]
     [ObjectLiteral]

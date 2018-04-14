@@ -1,11 +1,9 @@
 namespace Bridge.Google.Maps
 {
-    using Bridge;
-
     /// <summary>
-    /// The valid transit route type that can be specified in a TransitOptions.
-    /// Specify these by value, or by using the constant's name. For example,
-    /// 'LESS_WALKING' or google.maps.TransitRoutePreference.LESS_WALKING.
+    ///     The valid transit route type that can be specified in a TransitOptions.
+    ///     Specify these by value, or by using the constant's name. For example,
+    ///     'LESS_WALKING' or google.maps.TransitRoutePreference.LESS_WALKING.
     /// </summary>
     [External]
     [Enum(Emit.Name)]
@@ -13,15 +11,15 @@ namespace Bridge.Google.Maps
     public enum TransitRoutePreference
     {
         /// <summary>
-        /// Specifies that the calculated route should prefer a limited number
-        /// of transfers.
+        ///     Specifies that the calculated route should prefer a limited number
+        ///     of transfers.
         /// </summary>
         [Name("FEWER_TRANSFERS")]
         FewerTransfers,
 
         /// <summary>
-        /// Specifies that the calculated route should prefer limited amounts
-        /// of walking.
+        ///     Specifies that the calculated route should prefer limited amounts
+        ///     of walking.
         /// </summary>
         [Name("LESS_WALKING")]
         LessWalking

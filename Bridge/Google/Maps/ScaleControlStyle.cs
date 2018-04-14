@@ -1,9 +1,7 @@
 namespace Bridge.Google.Maps
 {
-    using Bridge;
-
     /// <summary>
-    /// Identifiers for scale control ids.
+    ///     Identifiers for scale control ids.
     /// </summary>
     [External]
     [Enum(Emit.Name)]
@@ -11,7 +9,7 @@ namespace Bridge.Google.Maps
     public enum ScaleControlStyle
     {
         /// <summary>
-        /// The standard scale control.
+        ///     The standard scale control.
         /// </summary>
         [Name("DEFAULT")]
         Default

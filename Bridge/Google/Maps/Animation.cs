@@ -1,10 +1,8 @@
 namespace Bridge.Google.Maps
 {
-    using Bridge;
-
     /// <summary>
-    /// Animations that can be played on a marker. Use the setAnimation method
-    /// on Marker or the animation option to play an animation.
+    ///     Animations that can be played on a marker. Use the setAnimation method
+    ///     on Marker or the animation option to play an animation.
     /// </summary>
     [External]
     [Enum(Emit.Name)]
@@ -12,15 +10,15 @@ namespace Bridge.Google.Maps
     public enum Animation
     {
         /// <summary>
-        /// Marker bounces until animation is stopped.
+        ///     Marker bounces until animation is stopped.
         /// </summary>
         [Name("BOUNCE")]
         Bounce,
 
         /// <summary>
-        /// Marker falls from the top of the map ending with a small bounce.
+        ///     Marker falls from the top of the map ending with a small bounce.
         /// </summary>
         [Name("DROP")]
-        Drop,
+        Drop
     }
 }

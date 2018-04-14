@@ -191,24 +191,27 @@
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
     <AdditionalExplicitAssemblyReferences />
   </PropertyGroup>
-  <ItemGroup Condition="'$(OS)' == 'Unix'">
-    <Reference Include="Bridge">
-      <HintPath>\opt\app\other\Bridge\Bridge.Core.16.8.2\lib\net40\Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Bridge.Html5">
-      <HintPath>\opt\app\other\Bridge\Bridge.Html5.16.8.2\lib\net40\Bridge.Html5.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup Condition="'$(OS)' != 'Unix'">
-    <Reference Include="Bridge">
-      <HintPath>Bridge\Bridge.Core.16.8.2\lib\net40\Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Bridge.Html5">
-      <HintPath>Bridge\Bridge.Html5.16.8.2\lib\net40\Bridge.Html5.dll</HintPath>
-    </Reference>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="bridge.json" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Bridge\Google\Maps\Geometry\" />
-    <Folder Include="Bridge\Google\Maps\Places\" />
+    <Reference Include="Bridge, Version=16.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bridge.Core.16.8.2\lib\net40\Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bridge.Html5, Version=16.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bridge.Html5.16.8.2\lib\net40\Bridge.Html5.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bridge.Newtonsoft.Json.1.6.0\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
+  <Import Project="..\packages\Bridge.Min.16.8.2\build\Bridge.Min.targets" Condition="Exists('..\packages\Bridge.Min.16.8.2\build\Bridge.Min.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Bridge.Min.16.8.2\build\Bridge.Min.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Bridge.Min.16.8.2\build\Bridge.Min.targets'))" />
+  </Target>
 </Project>

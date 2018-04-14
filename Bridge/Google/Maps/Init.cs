@@ -1,7 +1,5 @@
 ﻿namespace Bridge.Google.Maps
 {
-    using Bridge;
-
     public static class Init
     {
         // since those are interfaces, they need to be declared explicitly for bridge to work
