@@ -90,7 +90,6 @@
     <Compile Include="Bridge\Google\Maps\ImageMapTypeOptions.cs" />
     <Compile Include="Bridge\Google\Maps\InfoWindow.cs" />
     <Compile Include="Bridge\Google\Maps\InfoWindowOptions.cs" />
-    <Compile Include="Bridge\Google\Maps\Init.cs" />
     <Compile Include="Bridge\Google\Maps\KmlAuthor.cs" />
     <Compile Include="Bridge\Google\Maps\KmlLayer.cs" />
     <Compile Include="Bridge\Google\Maps\KmlLayerMetadata.cs" />
@@ -197,13 +196,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Bridge, Version=16.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bridge, Version=16.8.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\Bridge.Core.16.8.2\lib\net40\Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Bridge.Html5, Version=16.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bridge.Html5, Version=16.8.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\Bridge.Html5.16.8.2\lib\net40\Bridge.Html5.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Newtonsoft.Json, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\Bridge.Newtonsoft.Json.1.6.0\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
