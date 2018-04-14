@@ -4,6 +4,7 @@
 # other files
 Makefile
 *.userprefs
+*.sln
 
 # directories
 obj
