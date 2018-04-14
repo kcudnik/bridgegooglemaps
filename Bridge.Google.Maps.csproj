@@ -191,7 +191,7 @@
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
     <AdditionalExplicitAssemblyReferences />
   </PropertyGroup>
-  <ItemGroup Condition="'$(OS)' == 'Unix'"> >
+  <ItemGroup Condition="'$(OS)' == 'Unix'">
     <Reference Include="Bridge">
       <HintPath>\opt\app\other\Bridge\Bridge.Core.16.8.2\lib\net40\Bridge.dll</HintPath>
     </Reference>
@@ -199,7 +199,7 @@
       <HintPath>\opt\app\other\Bridge\Bridge.Html5.16.8.2\lib\net40\Bridge.Html5.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup Condition="'$(OS)' != 'Unix'"> >
+  <ItemGroup Condition="'$(OS)' != 'Unix'">
     <Reference Include="Bridge">
       <HintPath>Bridge\Bridge.Core.16.8.2\lib\net40\Bridge.dll</HintPath>
     </Reference>
