@@ -14,7 +14,7 @@ namespace Bridge.Google.Maps
     /// </summary>
     [External]
     [Name("Object")]
-    [Convention(Notation.LowerCamelCase, ConventionTarget.Member)]
+    [Convention(Notation.CamelCase, ConventionTarget.Member)]
     public interface MapType
     {
         /// <summary>
