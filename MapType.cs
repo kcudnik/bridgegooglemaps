@@ -13,7 +13,7 @@ namespace Bridge.Google.Maps
     ///     map types. Immutable.
     /// </summary>
     [External]
-    [Name("Object")]
+    [Name("System.Object")]
     [Convention(Notation.CamelCase, ConventionTarget.Member)]
     public interface MapType
     {

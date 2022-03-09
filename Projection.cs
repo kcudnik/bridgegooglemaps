@@ -5,7 +5,7 @@ namespace Bridge.Google.Maps
     /// </summary>
     //[Name("google.maps.Projection")]
     [External]
-    [Name("Object")]
+    [Name("System.Object")]
     [Convention(Notation.CamelCase, ConventionTarget.Member)]
     public interface Projection
     {
